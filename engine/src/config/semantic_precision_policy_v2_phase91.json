@@ -1,0 +1,51 @@
+{
+  "version": "2.9.1",
+  "stage": "closed_subject_process_table_evidence_phase91",
+  "final_schema": {
+    "column_count": 59,
+    "contract": "legacy_schema59_contract.json",
+    "allow_new_columns": false,
+    "encoding": "utf-8-sig",
+    "delimiter": "tab",
+    "one_physical_line_per_record": true
+  },
+  "subject_anchor": {
+    "strategy": "deterministic_candidates_then_closed_set_llm",
+    "llm_env": "KGCHOUQU_SUBJECT_LLM_ENABLED",
+    "allow_llm_new_subject": false,
+    "fail_closed": true
+  },
+  "semantic_split": {
+    "strategy": "source_boundary_candidates_then_closed_set_llm",
+    "llm_env": "KGCHOUQU_SEMANTIC_SPLIT_LLM_ENABLED",
+    "allow_rewrite": false,
+    "preserve_source_order": true
+  },
+  "process_steps": {
+    "strategy": "deterministic_step_skeleton_then_closed_set_llm",
+    "llm_env": "KGCHOUQU_PROCESS_LLM_ENABLED",
+    "allow_llm_new_step": false,
+    "stable_ids": true,
+    "require_exact_source_span": true,
+    "link_only_consecutive_released_steps": true
+  },
+  "table_axis": {
+    "strategy": "deterministic_plan_then_closed_set_llm_for_ambiguity",
+    "llm_env": "KGCHOUQU_TABLE_AXIS_LLM_ENABLED",
+    "allow_cell_mutation": false,
+    "minimum_llm_confidence": 0.74
+  },
+  "table_evidence": {
+    "final_evidence": "complete_original_markdown_table_block",
+    "tsv_newline_encoding": "\\n",
+    "tsv_tab_encoding": "\\t",
+    "exact_raw_sidecar": "step_table_evidence/table_evidence_store.jsonl",
+    "local_cell_sidecar": "step_table_evidence/table_fact_local_evidence.tsv",
+    "require_sha256_match": true
+  },
+  "release": {
+    "profile": "precision",
+    "uncertain_action": "candidate",
+    "llm_failure_action": "candidate_or_unresolved"
+  }
+}

@@ -1,0 +1,27 @@
+# Local credentials, uploaded data and generated extraction outputs
+.env
+.env.*
+!.env.example
+**/config.env
+storage/
+backend/storage/
+engine/runs/
+engine/llm_cache*/
+engine/books/*
+!engine/books/demo_energetic.md
+# Development state and dependency caches
+.git/
+.worktrees/
+.superpowers/
+.venv/
+__pycache__/
+.pytest_cache/
+.uv-cache/
+node_modules/
+coverage/
+playwright-report/
+test-results/
+*.pyc
+*.pyo
+*.log
+# This export deliberately includes engine/ and the existing deployment artifacts.

@@ -1,0 +1,27 @@
+version: 2
+phase: 6b
+policy: conservative_text_and_table_merge
+
+schema_contract:
+  source: model/config/legacy_schema59_contract.json
+  required_column_count: 59
+  exact_name_order_and_count: true
+
+text_subject_anchor_priority:
+  - explicit_identity_field
+  - explicit_material_formulation_or_device_heading
+  - unique_confirmed_table_registry_mention
+  - bounded_same_chapter_inheritance
+
+allowed_text_fact_patterns:
+  - labelled_field
+  - explicit_numeric_property
+  - known_property_section_narrative
+  - explicit_composition_description
+
+forbidden_behaviour:
+  - open_sentence_subject_generation
+  - cross_chapter_subject_inheritance
+  - generic_theory_heading_as_material_subject
+  - adding_or_removing_final_columns
+  - changing_final_column_order

@@ -1,0 +1,56 @@
+# KGchouqu strict generic table semantic policy v24.5.47
+# This file documents the controlled table semantics used by strict_generic_table_semantic_enhancer.py.
+# It is intentionally generic: it does not encode rules for a single book.
+
+table_semantic_types:
+  - 配方组成表
+  - 元素组成表
+  - 燃烧/反应产物表
+  - 热化学参数表
+  - 爆轰/爆炸性能表
+  - 感度/安全性能表
+  - 动力学参数表
+  - 设备/规格参数表
+  - 工艺参数表
+  - 试验条件-结果表
+  - 定义/符号对照表
+  - 通用参数表
+  - 未知表格
+
+projection_rules:
+  component_fact_allowed_only_for:
+    - 配方组成表
+    - 元素组成表
+  suppress_component_fact_for:
+    - 燃烧/反应产物表
+    - 热化学参数表
+    - 爆轰/爆炸性能表
+    - 感度/安全性能表
+    - 动力学参数表
+    - 设备/规格参数表
+    - 工艺参数表
+    - 试验条件-结果表
+    - 定义/符号对照表
+    - 通用参数表
+    - 未知表格
+
+value_types:
+  - number
+  - range
+  - inequality
+  - plusminus
+  - approximate_number
+  - categorical
+  - formula
+  - text
+  - empty
+
+axis_quality:
+  keep:
+    - entity-like subject
+    - short valid material or element subject
+  demote:
+    - metric name as subject
+    - unit or metric symbol as subject
+    - row index as subject
+    - sentence fragment subject

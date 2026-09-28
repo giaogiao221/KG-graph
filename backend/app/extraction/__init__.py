@@ -1,0 +1,1 @@
+"""Typed extraction adapter boundary."""

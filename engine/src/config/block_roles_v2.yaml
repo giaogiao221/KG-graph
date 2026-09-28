@@ -1,0 +1,17 @@
+﻿roles:
+  - material_instance
+  - material_family
+  - formulation_instance
+  - device_instance
+  - process_method
+  - property_topic
+  - experiment
+  - comparison
+  - theory_topic
+  - model_system
+  - application_safety
+
+direct_subject_roles:
+  - material_instance
+  - formulation_instance
+  - device_instance

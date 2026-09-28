@@ -1,0 +1,160 @@
+# strict_generic_policy.yaml v24.5.29
+# 通用严格策略；不包含任何具体领域白名单。
+
+subject_max_len: 42
+object_max_plain_len: 360
+min_confidence_graph: 0.82
+min_confidence_repair: 0.88
+
+reject_subject_prefixes:
+  - 因此
+  - 所以
+  - 其中
+  - 结果表明
+  - 试验结果
+  - 实验结果
+  - 由此可见
+  - 据此
+  - 这说明
+  - 而
+  - 当
+  - 若
+  - 如果
+  - 由于
+  - 为了
+  - 其
+  - 这种
+  - 这些
+  - 该
+  - 本书
+  - 本文
+  - 作者
+  - 图
+  - 表
+  - 可以看出
+  - 研究表明
+
+noise_terms:
+  - 目录
+  - 前言
+  - 第一版前言
+  - 第二版前言
+  - 第三版
+  - 责任编辑
+  - 责任校对
+  - 装帧设计
+  - 出版发行
+  - 印装
+  - 开本
+  - 印张
+  - 字数
+  - CIP
+  - ISBN
+  - 参考文献
+  - 索引
+  - 免责声明
+  - 编审委员会
+  - 网址
+  - 售后服务
+  - 版权所有
+  - 图书在版编目
+  - 购买
+  - 邮政编码
+  - 版次
+  - 印次
+  - 定价
+  - 书号
+
+# 定义方向识别只用语言模式，不按领域。
+definition_signals:
+  - 是指
+  - 指
+  - 定义为
+  - 称为
+  - 被称为
+  - 叫做
+  - 简称
+  - 即
+  - 是
+
+long_text_allowed_fact_types:
+  - 安全要求
+  - 要求
+  - 规范
+  - 方法
+  - 工艺
+  - 工艺步骤
+  - 定义
+  - 说明
+  - 处置措施
+  - 应急措施
+  - 操作注意事项
+  - 储存注意事项
+  - 运输注意事项
+
+# 通用数值属性词，用于“关系-取值兼容性”校验。
+numeric_predicate_terms:
+  - 温度
+  - 压力
+  - 密度
+  - 质量
+  - 速度
+  - 时间
+  - 浓度
+  - 比例
+  - 含量
+  - 粒径
+  - 长度
+  - 宽度
+  - 高度
+  - 厚度
+  - 面积
+  - 体积
+  - 燃速
+  - 爆速
+  - 比冲
+  - 感度
+  - 熔点
+  - 沸点
+  - 闪点
+  - 自燃温度
+  - 爆炸下限
+  - 爆炸上限
+  - 临界压力
+  - 临界温度
+  - 相对分子质量
+  - 分子量
+  - pH
+  - 黏度
+  - 粘度
+  - 毒性
+  - LC50
+  - LD50
+  - EC50
+  - 半衰期
+  - 临界量
+  - 误差
+  - 系数
+  - 指数
+
+# 表格通用前置分流：这些谓词形态不进入普通图。
+table_invalid_predicate_literals:
+  - '0'
+  - '1'
+  - '2'
+  - '3'
+  - '-'
+  - '—'
+  - α
+  - β
+  - γ
+  - δ
+  - x
+  - y
+
+# v24.5.37 production graph safeguard:
+# fallback/unknown predicates should not enter the core graph by default.
+route_other_attribute_to_manual_review: true
+other_attribute_categories:
+  - 其他属性
+  - 其它属性

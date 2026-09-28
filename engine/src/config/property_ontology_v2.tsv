@@ -1,0 +1,618 @@
+﻿property_id	alias	canonical_name	attribute_category	root_system	ontology_path	source	priority	unit_dimensions	allowed_value_roles	context_positive	context_negative
+prop:b088356e87de9272140b	光稳定性	光稳定性	稳定性	火工药剂	火工药剂/性质性能/化学稳定性/光稳定性	rawarrange_parameter_alias	100			化学稳定性	
+prop:271e94ce7a79c7c3aeb7	冲击感度	冲击感度	安全性能	火工药剂	火工药剂/性质性能/安全性/感度/冲击感度	rawarrange_parameter_alias	100			安全性	
+prop:f27465be0f56d57687bd	冲击波安全性	冲击波安全性	安全性能	火工药剂	火工药剂/性质性能/安全性/冲击波安全性	rawarrange_parameter_alias	100			安全性	
+prop:243bcf72c7e35345cb05	刺激性	腐蚀性/刺激性	毒理/环境	火工药剂	火工药剂/性质性能/健康危害理化性质/腐蚀性/刺激性	rawarrange_parameter_alias	100			健康危害理化性质	
+prop:c3d608e045cfbbb1e82d	力安全性	力安全性	安全性能	火工药剂	火工药剂/性质性能/安全性/力安全性	rawarrange_parameter_alias	100			安全性	
+prop:f61ca30df610e4dab2d6	包装类别	包装类别	储存/运输	火工药剂	火工药剂/性质性能/安全操作与储运特性/包装类别	rawarrange_parameter_alias	100			安全操作与储运特性	
+prop:d26292643524b203367a	半数致死剂量	半数致死剂量	毒理/环境	火工药剂	火工药剂/性质性能/健康危害理化性质/半数致死剂量	rawarrange_parameter_alias	100	dose		健康危害理化性质	
+prop:f07368431655880eb4b0	危险类别	危险类别	安全性能	火工药剂	火工药剂/性质性能/安全操作与储运特性/危险类别	rawarrange_parameter_alias	100			安全操作与储运特性	
+prop:333468f7d85a03d69474	吸湿性	吸湿性	物理属性	发射药	发射药/性质性能/基础理化性质/吸湿性	rawarrange_parameter_alias	100			基础理化性质	
+prop:527bfbaf7f7374c9929c	吸湿性	吸湿性	储存/运输	火工药剂	火工药剂/性质性能/安全操作与储运特性/吸湿性	rawarrange_parameter_alias	100			安全操作与储运特性	
+prop:0814b1c4b4d09cca3347	吸湿性	吸湿性	物理属性	火工药剂	火工药剂/性质性能/基础理化性质/吸湿性	rawarrange_parameter_alias	100			基础理化性质	
+prop:88b78a644f083271fa05	塑性参数	塑性参数	力学性能	发射药	发射药/性质性能/力学性能/塑性参数	rawarrange_parameter_alias	100			力学性能	
+prop:544bc8cc00ce9d7bea3d	密度	密度	物理属性	发射药	发射药/性质性能/基础理化性质/密度	rawarrange_parameter_alias	100	density		基础理化性质	
+prop:f9af5444b5611b430b3b	密度	密度	物理属性	火工药剂	火工药剂/性质性能/基础理化性质/密度	rawarrange_parameter_alias	100	density		基础理化性质	
+prop:247e7b5a0e712ad6acd1	应急响应参数	应急响应参数	储存/运输	火工药剂	火工药剂/性质性能/安全操作与储运特性/应急响应参数	rawarrange_parameter_alias	100			安全操作与储运特性	
+prop:b6b0b28e673af4b71ab0	弹性参数	弹性参数	力学性能	发射药	发射药/性质性能/力学性能/弹性参数	rawarrange_parameter_alias	100			力学性能	
+prop:88eac9886acd672b771b	摩擦感度	摩擦感度	安全性能	发射药	发射药/性质性能/安全性能/摩擦感度	rawarrange_parameter_alias	100			安全性能	
+prop:8ddc3221180eb8b5f381	摩擦感度	摩擦感度	安全性能	火工药剂	火工药剂/性质性能/安全性/感度/摩擦感度	rawarrange_parameter_alias	100			安全性	
+prop:9764081760b74b7a7124	撞击感度	撞击感度	安全性能	发射药	发射药/性质性能/安全性能/撞击感度	rawarrange_parameter_alias	100			安全性能	
+prop:cc09cf0ad9a7648d2fb5	毒性	毒性	安全性能	火工药剂	火工药剂/性质性能/安全性/毒性	rawarrange_parameter_alias	100			安全性	
+prop:f6f92aa805c477915ebf	毒性	毒性	毒理/环境	火工药剂	火工药剂/性质性能/健康危害理化性质/毒性	rawarrange_parameter_alias	100			健康危害理化性质	
+prop:3a4256911929aaaf02eb	毒理性指标	毒理性指标	安全性能	火工药剂	火工药剂/性质性能/安全性/毒理性指标	rawarrange_parameter_alias	100			安全性	
+prop:d6337acfda60b5af635c	比容	比容	燃烧性能	发射药	发射药/性质性能/能量性能/比容	rawarrange_parameter_alias	100			能量性能	
+prop:97b816b8a57e30b47bdb	比容	比容	爆轰/爆炸性能	火工药剂	火工药剂/性质性能/燃烧爆炸性质/比容	rawarrange_parameter_alias	100			燃烧爆炸性质	
+prop:0f9eb507513cb4352783	氧化还原稳定性	氧化还原稳定性	稳定性	火工药剂	火工药剂/性质性能/化学稳定性/氧化还原稳定性	rawarrange_parameter_alias	100			化学稳定性	
+prop:696e6e93d67cd9d1452d	水解稳定性	水解稳定性	稳定性	火工药剂	火工药剂/性质性能/化学稳定性/水解稳定性	rawarrange_parameter_alias	100			化学稳定性	
+prop:a188e3a46eab02d5d982	流散性	流散性	物理属性	火工药剂	火工药剂/性质性能/基础理化性质/流散性	rawarrange_parameter_alias	100			基础理化性质	
+prop:b8dfa0555d3befe4da17	溶解性与极性	溶解性与极性	物理属性	火工药剂	火工药剂/性质性能/基础理化性质/溶解性与极性	rawarrange_parameter_alias	100			基础理化性质	
+prop:496744d21afeb8b32ba8	激光感度	激光感度	安全性能	火工药剂	火工药剂/性质性能/安全性/感度/激光感度	rawarrange_parameter_alias	100			安全性	
+prop:6467dd26078c93287425	火药力和余容	火药力和余容	燃烧性能	发射药	发射药/性质性能/能量性能/火药力和余容	rawarrange_parameter_alias	100			能量性能	
+prop:463f25ddd27370ba019e	热分解稳定性	热分解稳定性	安全性能	发射药	发射药/性质性能/安全性能/热分解稳定性	rawarrange_parameter_alias	100			安全性能	
+prop:8476b4b0e8b840ed88f2	热力学性质	热力学性质	物理属性	火工药剂	火工药剂/性质性能/基础理化性质/热力学性质	rawarrange_parameter_alias	100			基础理化性质	
+prop:1074703e6ff562320621	热安全性	热安全性	安全性能	火工药剂	火工药剂/性质性能/安全性/热安全性	rawarrange_parameter_alias	100			安全性	
+prop:f251f53b5e3a1a68f2d5	热容量	热容量	物理属性	发射药	发射药/性质性能/基础理化性质/热容量	rawarrange_parameter_alias	100	heat_capacity		基础理化性质	
+prop:9219e9a6be8ffc29c962	热导率	热导率	物理属性	发射药	发射药/性质性能/基础理化性质/热导率	rawarrange_parameter_alias	100	thermal_conductivity		基础理化性质	
+prop:81ef16b4e3cc58ed01a1	热稳定性	热稳定性	热性能	火工药剂	火工药剂/性质性能/化学稳定性/热稳定性	rawarrange_parameter_alias	100			化学稳定性	
+prop:1ae1417e3901fce9bbdf	熔点	熔点	物理属性	火工药剂	火工药剂/性质性能/基础理化性质/熔点	rawarrange_parameter_alias	100	temperature		基础理化性质	
+prop:102a31f9fa4dc135a59d	燃烧热	燃烧热、爆热	爆轰/爆炸性能	火工药剂	火工药剂/性质性能/燃烧爆炸性质/燃烧热、爆热	rawarrange_parameter_alias	100	energy_per_mass		燃烧爆炸性质	
+prop:6dfd2dd7b674469b6333	燃烧热、爆热	燃烧热、爆热	爆轰/爆炸性能	火工药剂	火工药剂/性质性能/燃烧爆炸性质/燃烧热、爆热	rawarrange_parameter_alias	100	energy_per_mass		燃烧爆炸性质	
+prop:00f5bc634938bcef000f	燃速	燃速	燃烧性能	发射药	发射药/性质性能/燃烧性能/燃速	rawarrange_parameter_alias	100	burning_rate		燃烧性能	
+prop:03851fac4879f5bb2052	燃速压力指数	燃速压力指数	燃烧性能	发射药	发射药/性质性能/燃烧性能/燃速压力指数	rawarrange_parameter_alias	100	pressure|burning_rate		燃烧性能	
+prop:d55163d81a0347034dfe	燃速温度系数	燃速温度系数	燃烧性能	发射药	发射药/性质性能/燃烧性能/燃速温度系数	rawarrange_parameter_alias	100	temperature|burning_rate		燃烧性能	
+prop:6f82e2ad5c0479d8bd07	爆发点	爆发点	安全性能	发射药	发射药/性质性能/安全性能/爆发点	rawarrange_parameter_alias	100	temperature		安全性能	
+prop:6fbdd51112d039546fcc	爆发点	爆发点	爆轰/爆炸性能	火工药剂	火工药剂/性质性能/燃烧爆炸性质/爆发点	rawarrange_parameter_alias	100	temperature		燃烧爆炸性质	
+prop:716ca9407fcb8df9f4c4	爆炸极限	爆炸极限	安全性能	火工药剂	火工药剂/性质性能/安全性/爆炸极限	rawarrange_parameter_alias	100			安全性	
+prop:143019a855a7f7e4e9a0	爆热	爆热	燃烧性能	发射药	发射药/性质性能/能量性能/爆热	rawarrange_parameter_alias	100	energy_per_mass		能量性能	
+prop:f6967f8c2eb70ffab6cd	爆热	燃烧热、爆热	爆轰/爆炸性能	火工药剂	火工药剂/性质性能/燃烧爆炸性质/燃烧热、爆热	rawarrange_parameter_alias	100	energy_per_mass		燃烧爆炸性质	
+prop:81c0b15db429ed77ff3a	状态与颜色	状态与颜色	物理属性	火工药剂	火工药剂/性质性能/基础理化性质/状态与颜色	rawarrange_parameter_alias	100			基础理化性质	
+prop:49e33e92adabfff59426	生物降解性	生物降解性	安全性能	火工药剂	火工药剂/性质性能/安全性/生物降解性	rawarrange_parameter_alias	100			安全性	
+prop:7f5921880d5633f9b535	相容性	相容性	相容性	发射药	发射药/性质性能/相容性	rawarrange_parameter_alias	100			相容性	
+prop:18ffab2ddca8d8aaeee6	相容性	相容性	相容性	火工药剂	火工药剂/性质性能/相容性	rawarrange_parameter_alias	100			相容性	
+prop:8114fc37f3f38d5b0de8	稳定剂信息	稳定剂信息	储存/运输	火工药剂	火工药剂/性质性能/安全操作与储运特性/稳定剂信息	rawarrange_parameter_alias	100			安全操作与储运特性	
+prop:26c27c2cc926d665f3d7	粒度	粒度	物理属性	火工药剂	火工药剂/性质性能/基础理化性质/粒度	rawarrange_parameter_alias	100	length		基础理化性质	
+prop:3caec20cc44e15c9b92a	职业健康伤害类型	职业健康伤害类型	毒理/环境	火工药剂	火工药剂/性质性能/健康危害理化性质/职业健康伤害类型	rawarrange_parameter_alias	100			健康危害理化性质	
+prop:07df6ac9c1eec6dec92f	腐蚀性	腐蚀性/刺激性	毒理/环境	火工药剂	火工药剂/性质性能/健康危害理化性质/腐蚀性/刺激性	rawarrange_parameter_alias	100			健康危害理化性质	
+prop:302ea5ae5e57f6534227	腐蚀性/刺激性	腐蚀性/刺激性	毒理/环境	火工药剂	火工药剂/性质性能/健康危害理化性质/腐蚀性/刺激性	rawarrange_parameter_alias	100			健康危害理化性质	
+prop:f5ec394d5e268a56a476	谱学性质	谱学性质	物理属性	火工药剂	火工药剂/性质性能/基础理化性质/谱学性质	rawarrange_parameter_alias	100			基础理化性质	
+prop:21464db6b3824e5f3719	闪电	闪电	安全性能	火工药剂	火工药剂/性质性能/安全性/闪电	rawarrange_parameter_alias	100			安全性	
+prop:3a72bafb0ac5bf006d08	静电感度	静电感度	安全性能	火工药剂	火工药剂/性质性能/安全性/感度/静电感度	rawarrange_parameter_alias	100			安全性	
+prop:bbf119d8f6fe19ced8a8	CAS号	CAS号	标识信息			curated_override	95				
+prop:c0d2dfb1267a8a0db276	CAS登记号	CAS号	标识信息			curated_override	95				
+prop:5bdd222f8ef8723ed53d	LD50	半数致死剂量	毒理/环境			curated_override	95	dose			
+prop:186707783cf61b68132a	中文名	中文名称	标识信息			curated_override	95				
+prop:1d2028fdd07437bacc3a	中文名称	中文名称	标识信息			curated_override	95				
+prop:f5af81d6432e409108e5	储存	储存要求	储存/运输			curated_override	95				
+prop:125e3cae0896cd415c4e	冲击感度	冲击感度	安全性能			curated_override	95	sensitivity			
+prop:b964df4814dce7e2be9a	分子式	分子式	化学属性			curated_override	95				
+prop:68274202258fdda507ac	分子量	分子量	物理属性			curated_override	95	molar_mass			
+prop:d30b87830795883d5bbf	制备方法	制备方法	制备工艺			curated_override	95				
+prop:6546f0a11396766fd1d3	包装	包装要求	储存/运输			curated_override	95				
+prop:b9522532c29a56465e20	化学式	化学式	化学属性			curated_override	95				
+prop:0612b35d89690bf2ea2b	半数致死剂量	半数致死剂量	毒理/环境			curated_override	95	dose			
+prop:9b2f02b88c0cb8cefb00	压力指数	燃速压力指数	燃烧性能			curated_override	95	pressure|burning_rate			
+prop:fb2a099decc33e0e4fef	合成方法	合成方法	制备工艺			curated_override	95				
+prop:e50d8a378f3069714baa	含量	含量	组成/配方			curated_override	95	fraction			
+prop:de758e7397b3bf6ed0db	威力	威力	爆轰/爆炸性能			curated_override	95				
+prop:dd38a8adb78a1ff3d103	应用	应用场景	应用			curated_override	95				
+prop:33379170ed9fc3eec745	应用领域	应用场景	应用			curated_override	95				
+prop:a81f10df83542b4d6073	形貌	形貌	结构/形貌			curated_override	95				
+prop:4b405d566d5f43e66560	成分	组成	组成/配方			curated_override	95				
+prop:cbf71e265fba90a18ac0	摩擦感度	摩擦感度	安全性能			curated_override	95	sensitivity			
+prop:5c9f1df149f9e0cc358e	撞击感度	撞击感度	安全性能			curated_override	95	sensitivity			
+prop:8daad7ae9bfb9e54f105	晶型	晶型	结构/形貌			curated_override	95				
+prop:b731ceec099f675487a6	检测方法	检测方法	测试/检测方法			curated_override	95				
+prop:674d740324ce3e05e0a1	检验方法	检验方法	测试/检测方法			curated_override	95				
+prop:cb6ff199fd4aab69b173	毒性	毒性	毒理/环境			curated_override	95				
+prop:bdfe0db677b2f5ea08fd	比冲	比冲	燃烧性能			curated_override	95	specific_impulse			
+prop:5a242ecb28b9124ff80a	测试方法	测试方法	测试/检测方法			curated_override	95				
+prop:d6f579a9115a248849bd	燃速	燃速	燃烧性能			curated_override	95	burning_rate			
+prop:1ecc92c4a74ab5f5c265	爆压	爆压	爆轰/爆炸性能			curated_override	95	pressure			
+prop:a9ba5fb6cd6dbe24bf8b	爆速	爆速	爆轰/爆炸性能			curated_override	95	detonation_velocity			
+prop:01df3f4d41f4a30acc5e	猛度	猛度	爆轰/爆炸性能			curated_override	95				
+prop:efe4cfe62c33fc85a3bd	用于	应用场景	应用			curated_override	95				
+prop:ba7b7044adfb18d46380	用作	用途	用途			curated_override	95				
+prop:6a260fda786abe7d6de0	用途	用途	用途			curated_override	95				
+prop:4c8d8854f727ec3d2637	相对分子质量	分子量	物理属性			curated_override	95	molar_mass			
+prop:762df8af9339b0e908bc	简称	别名	别名			curated_override	95				
+prop:6ba7096e75d9826c5b94	粒度	粒度	物理属性			curated_override	95	length			
+prop:2d6bc657411f7e2ada12	粒径	粒径	物理属性			curated_override	95	length			
+prop:5beea5323004bb562dea	组分	组成	组成/配方			curated_override	95				
+prop:d1e9d595788fa05504e0	组成	组成	组成/配方			curated_override	95				
+prop:05409b676be7dd6493a0	结晶方法	结晶方法	制备工艺			curated_override	95				
+prop:8dfcf7afd974f69bff57	英文名	英文名称	标识信息			curated_override	95				
+prop:0b7dac72d3812a67e5a3	英文名称	英文名称	标识信息			curated_override	95				
+prop:475fd345507a431a610f	表征方法	表征方法	测试/检测方法			curated_override	95				
+prop:50ede55223e402887dc4	质量分数	质量分数	组成/配方			curated_override	95	fraction			
+prop:a02cc77135e5e095b2b2	贮存	储存要求	储存/运输			curated_override	95				
+prop:4ce3b07e4b69c45f3c9a	运输	运输要求	储存/运输			curated_override	95				
+prop:1cac57f90e02f4a3654c	配比	配比	组成/配方			curated_override	95				
+prop:3c37feb689bf3f637044	静电感度	静电感度	安全性能			curated_override	95	sensitivity			
+prop:068b7faec86199ece52a	Mn	数均分子量	物理属性			phase8a_generic_metric_seed	88	molar_mass			
+prop:c1b26c30c2c3df206f59	Mw	重均分子量	物理属性			phase8a_generic_metric_seed	88	molar_mass			
+prop:18a29e92dc073c213d9d	不溶物	不溶物	物理属性			phase8a_generic_metric_seed	88	fraction			
+prop:e3fbf4ce4ef9ca980398	与碱的反应性	与碱的反应性	化学属性			phase8a_generic_metric_seed	88				
+prop:771d4f232c185097f897	产物得率	产物得率	试验结果			phase8a_generic_metric_seed	88	fraction			
+prop:e3057dc78d383017e069	偏差	偏差	试验结果			phase8a_generic_metric_seed	88				
+prop:7b881fbdbb4642424291	元素含量	元素含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+prop:54fa902e64c048873ae5	分形维数	分形维数	模型/公式			phase8a_generic_metric_seed	88	ratio			
+prop:00528860aab7448611a8	分散度	分散度	结构/形貌			phase8a_generic_metric_seed	88	ratio			
+prop:6e93ed36bc798bc68def	初始分解峰	初始分解峰温度	热性能			phase8a_generic_metric_seed	88	temperature			
+prop:356b1065c0b9df9205d1	加热减量	加热减量	物理属性			phase8a_generic_metric_seed	88	fraction			
+prop:3401ce36d0e4a2dcd277	化学发光	化学发光	化学属性			phase8a_generic_metric_seed	88				
+prop:d03f719faefe62994b7f	升华热	升华热	热性能			phase8a_generic_metric_seed	88	energy_per_mole			
+prop:b1b6e49930b6cdc0cadb	半爆百分率	半爆百分率	试验结果			phase8a_generic_metric_seed	88	fraction			
+prop:819e4694bf6cfd438c0a	压强指数	燃速压力指数	燃烧性能			phase8a_generic_metric_seed	88	ratio			
+prop:b2f11bc34548f4c7884b	反应性	反应性	化学属性			phase8a_generic_metric_seed	88				
+prop:21fceccaded9ad81e631	取代度	取代度	化学属性			phase8a_generic_metric_seed	88	ratio			
+prop:86741897baaaf5543e64	叠氮化率	叠氮化率	化学属性			phase8a_generic_metric_seed	88	fraction			
+prop:26fbff8e90fdc24fa451	固化参数	固化参数	工艺参数			phase8a_generic_metric_seed	88				
+prop:ffd60d68c4fec8d7d155	在空气中的稳定性	空气稳定性	稳定性			phase8a_generic_metric_seed	88				
+prop:ddf58105f986cde8407f	外观检验	外观检验	测试/检测方法			phase8a_generic_metric_seed	88				
+prop:6b3c264997a3514ee9c2	威力指数	威力指数	爆轰/爆炸性能			phase8a_generic_metric_seed	88	ratio			
+prop:8145bfe3a5ba7756b64f	官能度	官能度	化学属性			phase8a_generic_metric_seed	88	ratio			
+prop:14da658459f7d21edf68	实测Mw	实测重均分子量	物理属性			phase8a_generic_metric_seed	88	molar_mass			
+prop:64747494ee0e4ce6fc50	实测黏度	实测黏度	物理属性			phase8a_generic_metric_seed	88	viscosity			
+prop:fb03a11a009ad46a34ff	实际量	实际用量	组成/配方			phase8a_generic_metric_seed	88	amount			
+prop:cdaf4db86b2a06974a29	引燃药成分质量分数	引燃药成分质量分数	组成/配方			phase8a_generic_metric_seed	88	fraction			
+prop:442f530dd007714a8897	得率	得率	试验结果			phase8a_generic_metric_seed	88	fraction			
+prop:1c81ad3d506e3b97fc7d	总焓	总焓	热性能			phase8a_generic_metric_seed	88	energy_per_mass			
+prop:fd4e692703c6fb258586	投料量	投料量	组成/配方			phase8a_generic_metric_seed	88	amount			
+prop:79596446a7034ea82ee4	挥发分	挥发分	物理属性			phase8a_generic_metric_seed	88	fraction			
+prop:dd1d0b65ea693ce3ffb9	断裂应力	断裂应力	力学性能			phase8a_generic_metric_seed	88	stress			
+prop:ec96286f214bc998c786	断裂应变	断裂应变	力学性能			phase8a_generic_metric_seed	88	strain			
+prop:e58245ca6dd5fffdc5d4	断裂模量	断裂模量	力学性能			phase8a_generic_metric_seed	88	modulus			
+prop:d4d22391652d5d72290c	最大分解峰	最大分解峰温度	热性能			phase8a_generic_metric_seed	88	temperature			
+prop:ca076d4346e5face2975	极限装药量	极限装药量	安全性能			phase8a_generic_metric_seed	88	mass			
+prop:946dedff5e6eb5572dc4	气味	气味	物理属性			phase8a_generic_metric_seed	88				
+prop:e7a7382c4bb7ded8acc0	氧化物沸点	氧化物沸点	物理属性			phase8a_generic_metric_seed	88	temperature			
+prop:3387ccf1cad9fb9ff8a4	氧化物熔点	氧化物熔点	物理属性			phase8a_generic_metric_seed	88	temperature			
+prop:883a75da56170a76d3f8	氧系数	氧系数	化学属性			phase8a_generic_metric_seed	88	ratio			
+prop:8c77a73eb277e2a105b2	水分	水分	物理属性			phase8a_generic_metric_seed	88	fraction			
+prop:16775d0b1e4c5f311e6e	火焰温度	火焰温度	燃烧性能			phase8a_generic_metric_seed	88	temperature			
+prop:1ccf7c417e721fccd328	灰分	灰分	物理属性			phase8a_generic_metric_seed	88	fraction			
+prop:a64194eeaa4ddaa11924	热力学火焰温度	热力学火焰温度	燃烧性能			phase8a_generic_metric_seed	88	temperature			
+prop:0c5d5de6bda690f06d46	燃烧主产物	燃烧主产物	化学属性			phase8a_generic_metric_seed	88				
+prop:4337d3587ac8b9d54f14	燃烧时间	燃烧时间	燃烧性能			phase8a_generic_metric_seed	88	time			
+prop:7bbbff6c129583ff7355	爆燃点	爆发点	安全性能			phase8a_generic_metric_seed	88	temperature			
+prop:57ef281314407ee22524	物态	物态	物理属性			phase8a_generic_metric_seed	88				
+prop:997461af388564f14c62	理论Mw	理论重均分子量	物理属性			phase8a_generic_metric_seed	88	molar_mass			
+prop:5089c4b7fc0cdd065cfc	理论比冲	理论比冲	燃烧性能			phase8a_generic_metric_seed	88	specific_impulse			
+prop:ab9587eb5f976c267551	理论量	理论用量	组成/配方			phase8a_generic_metric_seed	88	amount			
+prop:b56676937b482b0c84c0	甲醇不溶物	甲醇不溶物	物理属性			phase8a_generic_metric_seed	88	fraction			
+prop:083153e92df88e484273	相关系数	相关系数	模型/公式			phase8a_generic_metric_seed	88	ratio			
+prop:6542a4f43980c5f1ecd1	相对偏差	相对偏差	试验结果			phase8a_generic_metric_seed	88	fraction			
+prop:711879699f92091391e0	相对误差	相对误差	试验结果			phase8a_generic_metric_seed	88	fraction			
+prop:5b483f839d447fb6b90a	真空安定性	真空安定性	稳定性			phase8a_generic_metric_seed	88				
+prop:3a7381350a1f4499ba01	筛余物	筛余物	物理属性			phase8a_generic_metric_seed	88	fraction			
+prop:ba3f7db7d28e83c06c3a	粘合剂体系	粘合剂体系	组成/配方			phase8a_generic_metric_seed	88				
+prop:a92e0b1146dc19a9fc5b	组成描述	组成	组成/配方			phase8a_generic_metric_seed	88				
+prop:2d7251b59ee34b17ee9e	自然性	自燃性	安全性能			phase8a_generic_metric_seed	88	temperature			
+prop:94aa27eb2b57de01267c	自燃性	自燃性	安全性能			phase8a_generic_metric_seed	88	temperature			
+prop:b9d01cc62a2dec92a0ca	蒸气压	蒸气压	物理属性			phase8a_generic_metric_seed	88	pressure			
+prop:332c124bab26188488a0	计算黏度	计算黏度	物理属性			phase8a_generic_metric_seed	88	viscosity			
+prop:2d99d570b31083b2ea70	质量百分比	质量分数	组成/配方			phase8a_generic_metric_seed	88	fraction			
+prop:350ac2c6ac6c9ad308e1	起爆试验	起爆试验	测试/检测方法			phase8a_generic_metric_seed	88				
+prop:dcb7c7a5273a6bad86ce	适用性	适用性	应用			phase8a_generic_metric_seed	88				
+prop:dab347aeac7d317fdc46	重金属	重金属含量	化学属性			phase8a_generic_metric_seed	88	fraction			
+prop:8d0ae8f3d912c40c3876	钙	钙含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+prop:3f9e27ea62339cfdbe41	钠	钠含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+prop:b74075d6d5e0520c4f77	钾	钾含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+prop:3ad9a513d2447810d87e	铁	铁含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+prop:2c7797e58d63fa356ed9	铅	铅含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+prop:ef428a5f160bf037f1cd	镁	镁含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+prop:49013575bcb6bbaf1c83	黏合剂体系	粘合剂体系	组成/配方			phase8a_generic_metric_seed	88				
+prop:cb363b329ab6194ee168	黏性	黏性	物理属性			phase8a_generic_metric_seed	88				
+prop:c687767429c97324eb70	TNT当量	TNT当量	爆轰/爆炸性能			phase8a_generic_metric_seed	85	ratio			
+prop:26137392f19672477c63	初始壁速	初始壁速	爆轰/爆炸性能			phase8a_generic_metric_seed	85	velocity			
+prop:10347c6ccf8b31eb4cb4	初始密度	初始密度	物理属性			phase8a_generic_metric_seed	85	density			
+prop:e43cb35d2fb956bb3a87	初始爆速	初始爆速	爆轰/爆炸性能			phase8a_generic_metric_seed	85	detonation_velocity			
+prop:cd1499167a6913473eeb	半衰期	半衰期	稳定性			phase8a_generic_metric_seed	85	time			
+prop:58a1813964689d91a1ce	含水量	含水量	物理属性			phase8a_generic_metric_seed	85	fraction			
+prop:63d0527a1c7ea71e3ea2	圆筒壁膨胀速度	圆筒壁膨胀速度	爆轰/爆炸性能			phase8a_generic_metric_seed	85	velocity			
+prop:db078c7d16b4663f8ef8	峰顶温度	峰顶温度	热性能			phase8a_generic_metric_seed	85	temperature			
+prop:6bbbfba31e38c9709d8a	峰顶温度差	峰顶温度差	相容性			phase8a_generic_metric_seed	85	temperature			
+prop:4188f8d36921647db658	放气量	放气量	稳定性			phase8a_generic_metric_seed	85	volume			
+prop:68d67a2c931b9c4a1700	晶体密度	晶体密度	物理属性			phase8a_generic_metric_seed	85	density			
+prop:6d18bfcd78fd41bc875e	最大壁速	最大壁速	爆轰/爆炸性能			phase8a_generic_metric_seed	85	velocity			
+prop:374f0efd1352864fff8a	极限起爆药量	极限起爆药量	安全性能			phase8a_generic_metric_seed	85	mass			
+prop:4c72a704794cc69259a2	殉爆距离	殉爆距离	爆轰/爆炸性能			phase8a_generic_metric_seed	85	length			
+prop:68785d5d1b960563a13b	活化能	活化能	热性能			phase8a_generic_metric_seed	85	energy_per_mole			
+prop:394e7a665ebc289c8b70	炸高	炸高	爆轰/爆炸性能			phase8a_generic_metric_seed	85	length			
+prop:53c8af69aeaa68d6b025	热量	热量	热性能			phase8a_generic_metric_seed	85	energy			
+prop:9d4f51ac82ba819a5188	热量差值	热量差值	相容性			phase8a_generic_metric_seed	85	energy			
+prop:165c8b265638e7732882	爆发点	爆发点	安全性能			phase8a_generic_metric_seed	85	temperature			
+prop:cc740be156cfe4723e38	爆炸体积	爆炸体积	爆轰/爆炸性能			phase8a_generic_metric_seed	85	volume			
+prop:7b80798761eb05af28d8	爆炸热量	爆炸热量	爆轰/爆炸性能			phase8a_generic_metric_seed	85	energy_per_mass			
+prop:a8c00e7de412bfb8954f	状态与颜色	状态与颜色	物理属性			phase8a_generic_metric_seed	85				
+prop:e463325c0df9a3b2c7d7	生成热	生成热	热性能			phase8a_generic_metric_seed	85	energy_per_mole			
+prop:763c3ee0532a61109253	破甲深度	破甲深度	爆轰/爆炸性能			phase8a_generic_metric_seed	85	length			
+prop:c50f8d62c1efea603c83	纯度	纯度	物理属性			phase8a_generic_metric_seed	85	fraction			
+prop:bdd16b48d798b168c493	能量密度	能量密度	燃烧性能			phase8a_generic_metric_seed	85	energy_density			
+prop:69ada128627dd133395e	药柱直径	药柱直径	试验条件			phase8a_generic_metric_seed	85	length			
+prop:2e42aec173f207589253	药柱长度	药柱长度	试验条件			phase8a_generic_metric_seed	85	length			
+prop:19e5be497cd27b58a3fb	装填密度	装填密度	物理属性			phase8a_generic_metric_seed	85	density			
+prop:54b7335cb7e178e477a4	装药密度	装药密度	物理属性			phase8a_generic_metric_seed	85	density			
+prop:75e8c5a506d3df337917	质量燃速	质量燃速	燃烧性能			phase8a_generic_metric_seed	85	mass_rate			
+prop:64ee222641bf913be7b1	质量爆热	质量爆热	爆轰/爆炸性能			phase8a_generic_metric_seed	85	energy_per_mass			
+prop:fb08d577dc4e4d2bad91	释放气体	释放气体量	燃烧性能			phase8a_generic_metric_seed	85	amount			
+prop:dc327b968344ce54b4a8	释放气体量	释放气体量	燃烧性能			phase8a_generic_metric_seed	85	amount			
+prop:7ff4dc7d851dc402bcc9	释能功率	释能功率	燃烧性能			phase8a_generic_metric_seed	85	power			
+prop:60d60259edb9714607fa	释能时间	释能时间	燃烧性能			phase8a_generic_metric_seed	85	time			
+prop:00d2501770d2f5676675	铅铸扩张值	铅铸扩张值	爆轰/爆炸性能			phase8a_generic_metric_seed	85	volume			
+prop:b9b89028c9828ebfcfa4	静电电压	静电电压	安全性能			phase8a_generic_metric_seed	85	voltage			
+prop:a8e5ce45941261a25d10	DSC	DSC	热性能			legacy_taxonomy_seed	60				
+prop:b5b5adfa3e50d7246656	EC50	EC50	毒理/环境			legacy_taxonomy_seed	60				
+prop:58740b3c4d2a0e1af208	LC50	LC50	毒理/环境			legacy_taxonomy_seed	60				
+prop:e13de091c8fa373a7b94	TG	TG	热性能			legacy_taxonomy_seed	60				
+prop:924fca9048baf877a2ff	characterization	characterization	测试/检测方法			legacy_taxonomy_seed	60				
+prop:ed4839e877ac3b979a9d	detection method	detection method	测试/检测方法			legacy_taxonomy_seed	60				
+prop:4b6620f9c8237b500661	model	model	标识信息			legacy_taxonomy_seed	60				
+prop:98b15770304ceabbee64	pH	pH	工艺参数			legacy_taxonomy_seed	60				
+prop:389174f41abd828c749f	test method	test method	测试/检测方法			legacy_taxonomy_seed	60				
+prop:e858c41ba5367466816b	type	type	标识信息			legacy_taxonomy_seed	60				
+prop:7a109cf0af5796fd79f0	不利因素	不利因素	缺点			legacy_taxonomy_seed	60				
+prop:4083c34894436256a602	不相容	不相容	相容性			legacy_taxonomy_seed	60				
+prop:a934685a4cd15e283840	不足	不足	缺点			legacy_taxonomy_seed	60				
+prop:85e252d37ab2c6d4ad15	临界直径	临界直径	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+prop:0df5731595695625647f	主要因素	主要因素	影响因素			legacy_taxonomy_seed	60				
+prop:1640955e6f52af297e87	主要成分	组成	组成/配方			legacy_taxonomy_seed	60				
+prop:1a5ac515c114762f3794	产率	产率	试验结果			legacy_taxonomy_seed	60				
+prop:880be5c2847324802fe6	仓储	仓储	储存/运输			legacy_taxonomy_seed	60				
+prop:efd68ce0c0149e3853dc	代号	代号	别名			legacy_taxonomy_seed	60				
+prop:f0e7da81ed51a7d206c2	优势	优势	优点			legacy_taxonomy_seed	60				
+prop:3bf8464c1a6c700828b6	优异性能	优异性能	优点			legacy_taxonomy_seed	60				
+prop:372e99e54ccb2c78f3af	优点	优点	优点			legacy_taxonomy_seed	60				
+prop:8b5c5b884a558bdfd3b2	优良性能	优良性能	优点			legacy_taxonomy_seed	60				
+prop:ec52459ddc1eb58920ff	低压燃速	低压燃速	燃烧性能			legacy_taxonomy_seed	60	burning_rate			
+prop:ac69de843158a42ca4c0	体积	体积	物理属性			legacy_taxonomy_seed	60				
+prop:bff616eabe55a4c6a64c	体积增加	体积增加	物理属性			legacy_taxonomy_seed	60				
+prop:ebc147f5c0cdce59c834	体积增加ΔV	体积增加ΔV	物理属性			legacy_taxonomy_seed	60				
+prop:b0b252cc8727f2b7d37e	体积增加△V	体积增加△V	物理属性			legacy_taxonomy_seed	60				
+prop:6647359d99daf20d5d23	余容	余容	燃烧性能			legacy_taxonomy_seed	60				
+prop:6dcf6fe3fa8d62dc616c	作为	用途	应用			legacy_taxonomy_seed	60				
+prop:70e7c27da08b21cb118d	作功能力	作功能力	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+prop:5310b63e8c3cc4083f41	作用	作用	用途			legacy_taxonomy_seed	60				
+prop:cdaf6b1cafbf799b1ba0	作用效果	作用效果	性能影响			legacy_taxonomy_seed	60				
+prop:e2ad2ef74b2afc84e921	作者	作者	来源/出处			legacy_taxonomy_seed	60				
+prop:37d73f83359cf1b4d1ff	使用场合	使用场合	应用			legacy_taxonomy_seed	60				
+prop:34d8297b7ef24cdaf4b7	侵蚀燃烧	侵蚀燃烧	燃烧性能			legacy_taxonomy_seed	60				
+prop:b269467e26220956fee3	促进	促进	性能影响			legacy_taxonomy_seed	60				
+prop:6cf4f2fcf98dd335ad48	俗称	俗称	别名			legacy_taxonomy_seed	60				
+prop:2243c0ed1e0be52977a3	保存期	保存期	稳定性			legacy_taxonomy_seed	60				
+prop:87c85a9a268035968ba7	保存条件	保存条件	储存/运输			legacy_taxonomy_seed	60				
+prop:71044b16313837950658	健康危害	健康危害	毒理/环境			legacy_taxonomy_seed	60				
+prop:ff972ebe4fd08557dedf	储存/运输	储存/运输	储存/运输			legacy_taxonomy_seed	60				
+prop:98fd4eb4aad831a1661e	储存稳定性	储存稳定性	稳定性			legacy_taxonomy_seed	60				
+prop:0c8ead49443493bd93b6	储运	储运	储存/运输			legacy_taxonomy_seed	60				
+prop:188c3dd90899a09c7e3d	催化效果	催化效果	性能影响			legacy_taxonomy_seed	60				
+prop:e6ce317d863b9112cb23	公式	公式	模型/公式			legacy_taxonomy_seed	60				
+prop:3dccdb223e1b84a0b12e	关系式	关系式	模型/公式			legacy_taxonomy_seed	60				
+prop:2510680225cdd26e7d0e	具有组成	具有组成	组成/配方			legacy_taxonomy_seed	60				
+prop:1d3dcea69c8a15b77365	兼容性	兼容性	相容性			legacy_taxonomy_seed	60				
+prop:6fa818990ff1527f2ee6	决定因素	决定因素	影响因素			legacy_taxonomy_seed	60				
+prop:9ce27cbfe20fdece8677	准则	准则	标准/要求			legacy_taxonomy_seed	60				
+prop:9578db12ef016396e0a8	减少	减少	性能影响			legacy_taxonomy_seed	60				
+prop:fbbfa901d2f45f8cafb9	减弱	减弱	性能影响			legacy_taxonomy_seed	60				
+prop:a2efadcf243cb18a0495	出处	出处	来源/出处			legacy_taxonomy_seed	60				
+prop:4eaab35854914a0898fc	分为	分为	分类			legacy_taxonomy_seed	60				
+prop:d5ba0bcdb96209860913	分子结构	分子结构	化学属性			legacy_taxonomy_seed	60				
+prop:8d89fed9edf451bfbe5e	分类	分类	分类			legacy_taxonomy_seed	60				
+prop:7a974e7c007ef9795308	分解温度	分解温度	热性能			legacy_taxonomy_seed	60	temperature			
+prop:0698d6499811febb447b	判据	判据	标准/要求			legacy_taxonomy_seed	60				
+prop:ddb2c42567576c35d092	别名	别名	别名			legacy_taxonomy_seed	60				
+prop:1c01f0af1971236e43c6	制备	制备方法	制备工艺			legacy_taxonomy_seed	60				
+prop:11ce9c5537494e13719d	制备与加工	制备与加工	制备工艺			legacy_taxonomy_seed	60				
+prop:d8c32fdca5b37985274b	制备加工	制备加工	制备工艺			legacy_taxonomy_seed	60				
+prop:c300bd44553e9c369621	制备工艺	制备工艺	制备工艺			legacy_taxonomy_seed	60				
+prop:bfcdf7affbac54e5f433	制造	制造	制备工艺			legacy_taxonomy_seed	60				
+prop:1d38c90ddf22cd6fc94b	剂量	剂量	组成/配方			legacy_taxonomy_seed	60				
+prop:aca87d803d1f9c3d2461	力学性能	力学性能	力学性能			legacy_taxonomy_seed	60				
+prop:4bae111124c3536671ec	功能	功能	用途			legacy_taxonomy_seed	60				
+prop:5533f3b4dcddc133984d	加工	加工方法	制备工艺			legacy_taxonomy_seed	60				
+prop:85df8350be26abaabedf	劣势	劣势	缺点			legacy_taxonomy_seed	60				
+prop:53c0ddc3c3c7c6ad2ddc	包含	包含	组成/配方			legacy_taxonomy_seed	60				
+prop:248de6cb97815bcb036c	包装类别	包装类别	储存/运输			legacy_taxonomy_seed	60				
+prop:86f7fe2218356b60bd64	包覆	包覆	制备工艺			legacy_taxonomy_seed	60				
+prop:c6050614d1c248b8b3bb	化学属性	化学属性	化学属性			legacy_taxonomy_seed	60				
+prop:4d8a6692de2e3be3a4e3	化学性质	化学性质	化学属性			legacy_taxonomy_seed	60				
+prop:74ba0499e0ab4fb77912	化学稳定性	化学稳定性	化学属性			legacy_taxonomy_seed	60				
+prop:5e0ce462eb4f8252d4ba	化学组成	化学组成	化学属性			legacy_taxonomy_seed	60				
+prop:04270173d2ed49bde6ef	升温速率	升温速率	试验条件			legacy_taxonomy_seed	60				
+prop:77850a35cfc6a831a7b3	危险性	危险性	安全性能			legacy_taxonomy_seed	60				
+prop:6306e3c10d77c728d051	危险等级	危险等级	安全性能			legacy_taxonomy_seed	60				
+prop:d709cccafa629cbdad4a	危险类别	危险类别	安全性能			legacy_taxonomy_seed	60				
+prop:3047041c33b342651eb9	压制	压制	制备工艺			legacy_taxonomy_seed	60				
+prop:a7f3e6d9b88dc50eca9d	压制压力	压制压力	工艺参数			legacy_taxonomy_seed	60	pressure			
+prop:9112027b656376037aaf	压力	压力	工艺参数			legacy_taxonomy_seed	60	pressure			
+prop:d06a022a03d0dfa5ee04	压缩强度	压缩强度	力学性能			legacy_taxonomy_seed	60				
+prop:868764887cb453feeba7	原因	原因	影响因素			legacy_taxonomy_seed	60				
+prop:f9e62798ae3d0d675cf6	参数模型	参数模型	模型/公式			legacy_taxonomy_seed	60				
+prop:deeae40f9e96450620cc	参考文献	参考文献	来源/出处			legacy_taxonomy_seed	60				
+prop:5fe056749989a0c88f51	又称	又称	别名			legacy_taxonomy_seed	60				
+prop:0507beaaa00ef27cac67	反应活性	反应活性	化学属性			legacy_taxonomy_seed	60				
+prop:46f8dfcdb7cb136004de	发表于	发表于	来源/出处			legacy_taxonomy_seed	60				
+prop:0e3bc9bcd3f97011c644	变化率	变化率	试验结果			legacy_taxonomy_seed	60				
+prop:2d043507d3f8cfa39c1a	叫作	叫作	定义			legacy_taxonomy_seed	60				
+prop:464d87a02eaa0a3a805c	叫做	叫做	定义			legacy_taxonomy_seed	60				
+prop:e651b86b37a2d24befbc	可用于	应用场景	应用			legacy_taxonomy_seed	60				
+prop:91cd0db9240bfc507a7f	合成	合成方法	制备工艺			legacy_taxonomy_seed	60				
+prop:9d323d94262664b4abbe	含义	含义	定义			legacy_taxonomy_seed	60				
+prop:99ebe1d12b83a94f720f	含有	含有	组成/配方			legacy_taxonomy_seed	60				
+prop:013fd45ac963f4a810b7	吸热峰	吸热峰	热性能			legacy_taxonomy_seed	60				
+prop:a7208f8c82c81ed13f2b	商品名	商品名	别名			legacy_taxonomy_seed	60				
+prop:4a3e2503d3555d59ee78	因素	因素	影响因素			legacy_taxonomy_seed	60				
+prop:2326db20ed026482b77e	团聚状态	团聚状态	结构/形貌			legacy_taxonomy_seed	60				
+prop:f4ad8008dd009100d0c6	固化	固化	制备工艺			legacy_taxonomy_seed	60				
+prop:894395c302a921363881	固化时间	固化时间	工艺参数			legacy_taxonomy_seed	60	time			
+prop:d65cfa204dd490f950ca	固化温度	固化温度	工艺参数			legacy_taxonomy_seed	60	temperature			
+prop:99b53a5e377d84754e45	型号	型号	标识信息			legacy_taxonomy_seed	60				
+prop:91d8ba83c0eae324c769	增加	增加	性能影响			legacy_taxonomy_seed	60				
+prop:87c344b306536f4dbdcf	增强	增强	性能影响			legacy_taxonomy_seed	60				
+prop:45cd9909f006a144e76f	增量	增量	试验结果			legacy_taxonomy_seed	60				
+prop:c5152f7d52588e806d13	外观	外观	物理属性			legacy_taxonomy_seed	60				
+prop:f7ab1d990d7bbd248d98	孔径	孔径	物理属性			legacy_taxonomy_seed	60				
+prop:7053094fb83fffc4e5d4	孔结构	孔结构	结构/形貌			legacy_taxonomy_seed	60				
+prop:de34c61c07a9c782b66a	存放	存放	储存/运输			legacy_taxonomy_seed	60				
+prop:6e56df719d8dd887ab6d	存放时间	存放时间	试验条件			legacy_taxonomy_seed	60	time			
+prop:4737b566ce43fa53a6dd	安全性	安全性	安全性能			legacy_taxonomy_seed	60				
+prop:9bcf49050a0e78dc5043	安全性能	安全性能	安全性能			legacy_taxonomy_seed	60				
+prop:aa46eb44e6cb99110d9c	安全操作	安全操作	安全性能			legacy_taxonomy_seed	60				
+prop:4392f43fc289f99229f3	安定性	安定性	安全性能			legacy_taxonomy_seed	60				
+prop:ef09c625b52421829875	官能团	官能团	化学属性			legacy_taxonomy_seed	60				
+prop:2ab3eedb5917490e2502	定义	定义	定义			legacy_taxonomy_seed	60				
+prop:309857cdb11c811ee792	定义为	定义为	定义			legacy_taxonomy_seed	60				
+prop:8fbe09f3cddf4d514734	实际应用	应用场景	应用			legacy_taxonomy_seed	60				
+prop:80d3cd777d8bc328c79b	实验条件	实验条件	试验条件			legacy_taxonomy_seed	60				
+prop:8e412c8e01f7039899ce	实验结果	实验结果	试验结果			legacy_taxonomy_seed	60				
+prop:7cc168331d6b8c686c06	密度	密度	物理属性			legacy_taxonomy_seed	60	density			
+prop:b346081e56f16c8be650	局限	局限	缺点			legacy_taxonomy_seed	60				
+prop:4029dc1930635f100d31	属于	属于	分类			legacy_taxonomy_seed	60				
+prop:b275dc48fd60c05abe59	工艺参数	工艺参数	工艺参数			legacy_taxonomy_seed	60				
+prop:76bde1c349677b156537	工艺步骤	工艺步骤	制备工艺			legacy_taxonomy_seed	60				
+prop:5488b952dd9f5e894df8	工艺流程	工艺流程	制备工艺			legacy_taxonomy_seed	60				
+prop:e7d6970d3c391845ff68	干燥	干燥	制备工艺			legacy_taxonomy_seed	60				
+prop:1ee9e4eb3184abc224dc	干燥温度	干燥温度	工艺参数			legacy_taxonomy_seed	60	temperature			
+prop:6a19f0302fca8a708ebb	平台燃烧	平台燃烧	燃烧性能			legacy_taxonomy_seed	60				
+prop:5998ab5b11d1728dc278	年代	年代	来源/出处			legacy_taxonomy_seed	60				
+prop:7aac83431ad771316e5e	应用于	应用场景	应用			legacy_taxonomy_seed	60				
+prop:bc01fec51965987efac7	应用场景	应用场景	应用			legacy_taxonomy_seed	60				
+prop:c642a2356453a06f5641	应用范围	应用场景	应用			legacy_taxonomy_seed	60				
+prop:bcf87972c61ade1b2c92	弹性模量	弹性模量	力学性能			legacy_taxonomy_seed	60				
+prop:121d44db812bf34b4968	强度	强度	力学性能			legacy_taxonomy_seed	60				
+prop:2d7c6ec16650f2c2bb8d	归为	归为	分类			legacy_taxonomy_seed	60				
+prop:67ea802d513ead0af71f	归属	归属	分类			legacy_taxonomy_seed	60				
+prop:96f39d2fafca678d924b	形态	形态	物理属性			legacy_taxonomy_seed	60				
+prop:cadf75f390e3d94a5cf8	影响	影响	性能影响			legacy_taxonomy_seed	60				
+prop:bf065a9a3b3063260756	影响因素	影响因素	影响因素			legacy_taxonomy_seed	60				
+prop:d97823058ba070c33e9a	影响效果	影响效果	性能影响			legacy_taxonomy_seed	60				
+prop:43d51a573f853855c6a0	循环次数	循环次数	试验条件			legacy_taxonomy_seed	60				
+prop:1e66f2cd84c81efc3d79	微观结构	微观结构	结构/形貌			legacy_taxonomy_seed	60				
+prop:be71ca4ae4d1fa06764f	性能影响	性能影响	性能影响			legacy_taxonomy_seed	60				
+prop:3bf4a09aff1374182413	感度	感度	安全性能			legacy_taxonomy_seed	60	sensitivity			
+prop:5fdca132cce7dae3c838	技术要求	技术要求	标准/要求			legacy_taxonomy_seed	60				
+prop:850d3d0b522945aa3f91	抑制	抑制	性能影响			legacy_taxonomy_seed	60				
+prop:1a4578a7375b85984903	抗压强度	抗压强度	力学性能			legacy_taxonomy_seed	60				
+prop:59331a377010796897a3	折射率	折射率	物理属性			legacy_taxonomy_seed	60				
+prop:d418addf40139caf0327	报道	报道	来源/出处			legacy_taxonomy_seed	60				
+prop:20a90f3c06659d11361e	拉伸强度	拉伸强度	力学性能			legacy_taxonomy_seed	60				
+prop:373f4bf93aa933c9146e	拟合式	拟合式	模型/公式			legacy_taxonomy_seed	60				
+prop:bd52fa40ade55c7cc37b	指标	指标	试验结果			legacy_taxonomy_seed	60				
+prop:0e8c89faa10721d085f0	指标要求	指标要求	标准/要求			legacy_taxonomy_seed	60				
+prop:a2e0c751203a2189d0be	损失率	损失率	试验结果			legacy_taxonomy_seed	60				
+prop:aab29f5f30a670d1bee5	控制因素	控制因素	影响因素			legacy_taxonomy_seed	60				
+prop:7f6e7cc0ffc12472a62d	提出	提出	来源/出处			legacy_taxonomy_seed	60				
+prop:d94c158102da092f23dd	提高	提高	性能影响			legacy_taxonomy_seed	60				
+prop:2435b83f74984b67dd53	操作步骤	操作步骤	制备工艺			legacy_taxonomy_seed	60				
+prop:30577a29c5efb4b7c1b0	收率	收率	试验结果			legacy_taxonomy_seed	60				
+prop:3b11150516b4f0e75122	改善	改善	性能影响			legacy_taxonomy_seed	60				
+prop:2c8fbf1a8ccd05b79a66	改性方法	改性方法	制备工艺			legacy_taxonomy_seed	60				
+prop:87f93b2dd0e74b96733c	放热峰	放热峰	热性能			legacy_taxonomy_seed	60				
+prop:6de1acd7dd8620b80bbe	文献	文献	来源/出处			legacy_taxonomy_seed	60				
+prop:388e07152781dccc863f	断裂伸长率	断裂伸长率	力学性能			legacy_taxonomy_seed	60				
+prop:4114ad540e678b37cf2e	方程	方程	模型/公式			legacy_taxonomy_seed	60				
+prop:46855b833bd4485f3bc6	时间	时间	工艺参数			legacy_taxonomy_seed	60	time			
+prop:32b56ca0840ef7febfda	是...一种	是...一种	分类			legacy_taxonomy_seed	60				
+prop:a4c51b47b314f1828ddf	是指	是指	定义			legacy_taxonomy_seed	60				
+prop:3840f88f186b057a7390	有利于	有利于	优点			legacy_taxonomy_seed	60				
+prop:b3e8ff1db5e3a2f4b2a6	机械性能	机械性能	力学性能			legacy_taxonomy_seed	60				
+prop:6423171567753517f4b3	条件	条件	试验条件			legacy_taxonomy_seed	60				
+prop:66befef45db37ab0d5c3	来源	来源	来源/出处			legacy_taxonomy_seed	60				
+prop:deb02d4dd84bfaf5bb55	来源/出处	来源/出处	来源/出处			legacy_taxonomy_seed	60				
+prop:ac4177e5af4101e5d4d9	标准	标准	标准/要求			legacy_taxonomy_seed	60				
+prop:2723a323ec2b406f68eb	标准/要求	标准/要求	标准/要求			legacy_taxonomy_seed	60				
+prop:3088c9cb743a570d63a5	标识信息	标识信息	标识信息			legacy_taxonomy_seed	60				
+prop:02337acdd00eba4127a1	样品编号	样品编号	标识信息			legacy_taxonomy_seed	60				
+prop:184a8ec972e185de87e4	检测	检测方法	测试/检测方法			legacy_taxonomy_seed	60				
+prop:65545bcd03bce8110472	检测条件	检测条件	试验条件			legacy_taxonomy_seed	60				
+prop:3ea3b8b84b525b5d0d9c	检测结果	检测结果	试验结果			legacy_taxonomy_seed	60				
+prop:a0cbd085b7945eff92ff	概念	概念	定义			legacy_taxonomy_seed	60				
+prop:db09ea533ff3033888fa	概念定义	概念定义	定义			legacy_taxonomy_seed	60				
+prop:0a5ef05b3c11551d2f99	模型	模型	模型/公式			legacy_taxonomy_seed	60				
+prop:108d304a0a0b7a49d70f	模型/公式	模型/公式	模型/公式			legacy_taxonomy_seed	60				
+prop:c720a4d7b4c668495a50	模量	模量	力学性能			legacy_taxonomy_seed	60				
+prop:507eb117fbf86b9da106	残留率	残留率	试验结果			legacy_taxonomy_seed	60				
+prop:ee184504f6491e387c38	毒理	毒理	毒理/环境			legacy_taxonomy_seed	60				
+prop:41043ace4126812c73f6	毒理/环境	毒理/环境	毒理/环境			legacy_taxonomy_seed	60				
+prop:cdb558fcc54fc96fddcb	比例	比例	组成/配方			legacy_taxonomy_seed	60				
+prop:4ce95e57a4c9d851b400	比容	比容	燃烧性能			legacy_taxonomy_seed	60				
+prop:1f2c75c8794e08c4f079	比表面积	比表面积	物理属性			legacy_taxonomy_seed	60				
+prop:a426e83c3c06ef37deff	气氛	气氛	试验条件			legacy_taxonomy_seed	60				
+prop:986f34236df7e6bc7466	氧平衡	氧平衡	化学属性			legacy_taxonomy_seed	60				
+prop:85f4a38401ee75358c87	污染	污染	毒理/环境			legacy_taxonomy_seed	60				
+prop:2b036f61989adf52303b	沸点	沸点	物理属性			legacy_taxonomy_seed	60	temperature			
+prop:b24e2bbf85bedfc87dcb	泊松比	泊松比	力学性能			legacy_taxonomy_seed	60				
+prop:95bfa5275ee3275b6fdc	流量	流量	工艺参数			legacy_taxonomy_seed	60				
+prop:30407b8fe32c01e6775e	测试/检测方法	测试/检测方法	测试/检测方法			legacy_taxonomy_seed	60				
+prop:c7d1400a4d9a98f8fe19	测试压力	测试压力	试验条件			legacy_taxonomy_seed	60	pressure			
+prop:bc43055e3af06eefa233	测试条件	测试条件	试验条件			legacy_taxonomy_seed	60				
+prop:8268c79c47852578a712	测试温度	测试温度	试验条件			legacy_taxonomy_seed	60	temperature			
+prop:e1290a86e2901942384b	测试结果	测试结果	试验结果			legacy_taxonomy_seed	60				
+prop:a853f37d930d65d0f2b0	浓度	浓度	工艺参数			legacy_taxonomy_seed	60				
+prop:ccf3cd7c4aadf41f0f79	混合	混合	制备工艺			legacy_taxonomy_seed	60				
+prop:c69883b4b48d6e364c07	混合时间	混合时间	工艺参数			legacy_taxonomy_seed	60	time			
+prop:4871035d29431336a158	温度	温度	工艺参数			legacy_taxonomy_seed	60	temperature			
+prop:5cc48d8427b6dc4a0c4f	湿度	湿度	试验条件			legacy_taxonomy_seed	60				
+prop:b8bd5f18d2ea65b656a7	火焰感度	火焰感度	安全性能			legacy_taxonomy_seed	60	sensitivity			
+prop:1df618485a814d9c9461	火药力	火药力	燃烧性能			legacy_taxonomy_seed	60				
+prop:85f8379889f2992cd98b	热分解	热分解	热性能			legacy_taxonomy_seed	60				
+prop:8e63c5147c6878ee3ad1	热分解温度	热分解温度	热性能			legacy_taxonomy_seed	60	temperature			
+prop:5084281daf47ac919d1d	热失重	热失重	热性能			legacy_taxonomy_seed	60				
+prop:ef8a887a5799e85b4c99	热容量	热容量	热性能			legacy_taxonomy_seed	60	heat_capacity			
+prop:ffffc9578282c9cf156c	热导率	热导率	热性能			legacy_taxonomy_seed	60	thermal_conductivity			
+prop:604098a2eda865806b95	热循环	热循环	试验条件			legacy_taxonomy_seed	60				
+prop:910fd16de95b427058d7	热性能	热性能	热性能			legacy_taxonomy_seed	60				
+prop:2d76803caabe28618361	热性质	热性质	热性能			legacy_taxonomy_seed	60				
+prop:08d2f8962cec4ec1a75d	热感度	热感度	安全性能			legacy_taxonomy_seed	60	sensitivity			
+prop:dcc8b7df314357dce6a5	热爆炸临界温度	热爆炸临界温度	热性能			legacy_taxonomy_seed	60	temperature			
+prop:acfa41ec811f56ba5ae8	热稳定性	热稳定性	热性能			legacy_taxonomy_seed	60				
+prop:373a5f7c989f6b2a7988	熔点	熔点	物理属性			legacy_taxonomy_seed	60	temperature			
+prop:8516cf3ceb6383143c3d	燃温	燃温	燃烧性能			legacy_taxonomy_seed	60				
+prop:29fd1a6eafc37bcd0534	燃烧产物	燃烧产物	化学属性			legacy_taxonomy_seed	60				
+prop:10f8dab4dfff6db70375	燃烧性能	燃烧性能	燃烧性能			legacy_taxonomy_seed	60				
+prop:6ee0be9f241fe4aa1ad1	燃烧性质	燃烧性质	燃烧性能			legacy_taxonomy_seed	60				
+prop:d3e5cde5c8402eec2490	燃烧效率	燃烧效率	燃烧性能			legacy_taxonomy_seed	60				
+prop:5a23bb4ec4ab52843024	燃烧温度	燃烧温度	燃烧性能			legacy_taxonomy_seed	60	temperature			
+prop:4e5922f6f64077a532c9	燃烧速度	燃烧速度	燃烧性能			legacy_taxonomy_seed	60				
+prop:6668b2b2e960bc9d9661	燃爆危险性	燃爆危险性	安全性能			legacy_taxonomy_seed	60				
+prop:538503efa55390499907	燃速压力指数	燃速压力指数	燃烧性能			legacy_taxonomy_seed	60	pressure|burning_rate			
+prop:4546b850108cdf075cad	爆炸威力	爆炸威力	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+prop:2325c646441fe6e3d365	爆炸性能	爆炸性能	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+prop:51ede9f132a676e0bd09	爆热	爆热	燃烧性能			legacy_taxonomy_seed	60	energy_per_mass			
+prop:55f9bdc2268853a2fdfd	爆轰/爆炸性能	爆轰/爆炸性能	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+prop:06ea54030c010428ffb1	爆轰压力	爆轰压力	爆轰/爆炸性能			legacy_taxonomy_seed	60	pressure			
+prop:b7009c382cceb70e6386	爆轰性能	爆轰性能	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+prop:aebf8dc4b35046e6ac38	牌号	牌号	标识信息			legacy_taxonomy_seed	60				
+prop:de4fa7b2ca920824b4c4	物性	物性	物理属性			legacy_taxonomy_seed	60				
+prop:d5aae06a5276a1b861ff	物理属性	物理属性	物理属性			legacy_taxonomy_seed	60				
+prop:7577d392208f798f4af3	物理性质	物理性质	物理属性			legacy_taxonomy_seed	60				
+prop:2f858366f5c696d1ade8	特征速度	特征速度	燃烧性能			legacy_taxonomy_seed	60				
+prop:0fd4fbc8c99a9afbbb54	特点	特点	优点			legacy_taxonomy_seed	60				
+prop:178ad0b0de5d034b9db3	状态	状态	物理属性			legacy_taxonomy_seed	60				
+prop:e202d245cfd50100d7c2	环境危害	环境危害	毒理/环境			legacy_taxonomy_seed	60				
+prop:7b891c600fdc48f2d216	环境影响	环境影响	毒理/环境			legacy_taxonomy_seed	60				
+prop:9e3932870c203e5fd3ef	玻璃化温度	玻璃化温度	热性能			legacy_taxonomy_seed	60	temperature			
+prop:3d23da9e53ade1fe8328	生态毒性	生态毒性	毒理/环境			legacy_taxonomy_seed	60				
+prop:c67aba44c8fc8b1c075c	生成焓	生成焓	化学属性			legacy_taxonomy_seed	60	energy_per_mole			
+prop:b2334aba24adb88a740c	生物降解	生物降解	毒理/环境			legacy_taxonomy_seed	60				
+prop:1a095b27fefa40739379	用来	用来	用途			legacy_taxonomy_seed	60				
+prop:d60fae5c7280974b743b	由...组成	由...组成	组成/配方			legacy_taxonomy_seed	60				
+prop:4926edc39f5045e7549f	目的	目的	用途			legacy_taxonomy_seed	60				
+prop:eaeef43e81e4f27d3738	相容	相容	相容性			legacy_taxonomy_seed	60				
+prop:2cfbcb27577b16bdabfb	相容性	相容性	相容性			legacy_taxonomy_seed	60				
+prop:abca01d03ca2b79e940a	相容性评价	相容性评价	相容性			legacy_taxonomy_seed	60				
+prop:2a31c9ac7b27475eb551	真空度	真空度	工艺参数			legacy_taxonomy_seed	60				
+prop:bba363058e6d6d94658e	硬度	硬度	物理属性			legacy_taxonomy_seed	60				
+prop:459b08b1e6979108b587	碱值	碱值	化学属性			legacy_taxonomy_seed	60				
+prop:4e026553c8b5311c7ebd	种类	种类	分类			legacy_taxonomy_seed	60				
+prop:d8a4addbdd33754ce71a	称为	称为	定义			legacy_taxonomy_seed	60				
+prop:5259fc80265d41876a4d	称作	称作	定义			legacy_taxonomy_seed	60				
+prop:9e0eb11eb68f96a52043	稳定性	稳定性	稳定性			legacy_taxonomy_seed	60				
+prop:d4404c39e5ad6d3480c4	算法	算法	模型/公式			legacy_taxonomy_seed	60				
+prop:d7c3b8c4d5f0693f12bc	类别	类别	分类			legacy_taxonomy_seed	60				
+prop:52ce9c9b17e9ea74d860	类型	类型	分类			legacy_taxonomy_seed	60				
+prop:ce947b42b49495ff29e4	粒形	粒形	结构/形貌			legacy_taxonomy_seed	60				
+prop:ad8e8538c491ee6c6f9b	粒径分布	粒径分布	结构/形貌			legacy_taxonomy_seed	60	length			
+prop:ef16dd0b9ede899d9fb1	粒貌	粒貌	结构/形貌			legacy_taxonomy_seed	60				
+prop:4b7549ba517949d9c07f	粘度	粘度	物理属性			legacy_taxonomy_seed	60				
+prop:d00ec9fab0b70195ef21	粘结强度	粘结强度	力学性能			legacy_taxonomy_seed	60				
+prop:aa31b9e7612ef0fa1a43	系指	系指	定义			legacy_taxonomy_seed	60				
+prop:33b7c9139841294b89b5	组成/配方	组成/配方	组成/配方			legacy_taxonomy_seed	60				
+prop:1f211409f257b5534d70	组成成分	组成	组成/配方			legacy_taxonomy_seed	60				
+prop:8774d0813ec76ba6c4ef	结构	结构	结构/形貌			legacy_taxonomy_seed	60				
+prop:c9295c875df8c4e331ff	结构/形貌	结构/形貌	结构/形貌			legacy_taxonomy_seed	60				
+prop:926910aff806a1c418f2	结构式	结构式	化学属性			legacy_taxonomy_seed	60				
+prop:44f16c8353dae919295a	结果	结果	试验结果			legacy_taxonomy_seed	60				
+prop:3cff4130ab230a460399	统称	统称	定义			legacy_taxonomy_seed	60				
+prop:d3645f04843a29bf04bc	编号	编号	别名			legacy_taxonomy_seed	60				
+prop:ec6d586bb9737559b7e6	缩写	缩写	别名			legacy_taxonomy_seed	60				
+prop:bb31f13bff2ba2e34a8b	缺点	缺点	缺点			legacy_taxonomy_seed	60				
+prop:7b0ca286b4b1f0aad867	缺陷	缺陷	缺点			legacy_taxonomy_seed	60				
+prop:08417561cf470f709268	老化性能	老化性能	稳定性			legacy_taxonomy_seed	60				
+prop:bd986cbf8219a2fe2943	老化时间	老化时间	试验条件			legacy_taxonomy_seed	60	time			
+prop:0bafded752c656cadd00	药量	药量	组成/配方			legacy_taxonomy_seed	60				
+prop:497564e2025019f53a37	表征	表征方法	测试/检测方法			legacy_taxonomy_seed	60				
+prop:a067b0a166f711657654	表征条件	表征条件	试验条件			legacy_taxonomy_seed	60				
+prop:62ff4350cba6e435ea98	表征结果	表征结果	试验结果			legacy_taxonomy_seed	60				
+prop:0cb39d6b727317155ec1	表达式	表达式	模型/公式			legacy_taxonomy_seed	60				
+prop:159c746ea1ff2c8bbdd6	表面形貌	表面形貌	结构/形貌			legacy_taxonomy_seed	60				
+prop:1bf8038abe0b1e55f16f	要求	要求	标准/要求			legacy_taxonomy_seed	60				
+prop:8b6374d5dbab686da797	观测结果	观测结果	试验结果			legacy_taxonomy_seed	60				
+prop:e34cc47f396e9e3f1640	规定	规定	标准/要求			legacy_taxonomy_seed	60				
+prop:6e8b4df9c4b0cc1a920a	规范	规范	标准/要求			legacy_taxonomy_seed	60				
+prop:f73a99bc91326403eda9	计算式	计算式	模型/公式			legacy_taxonomy_seed	60				
+prop:a48dbeb2cb77c7a22134	设计要求	设计要求	标准/要求			legacy_taxonomy_seed	60				
+prop:96720a1a054b7103e2c4	试样编号	试样编号	标识信息			legacy_taxonomy_seed	60				
+prop:dcbe6a87aa07a094e83b	试验压力	试验压力	试验条件			legacy_taxonomy_seed	60	pressure			
+prop:d9c75e00a7d7b78906e3	试验条件	试验条件	试验条件			legacy_taxonomy_seed	60				
+prop:3870f6a17923e3873821	试验温度	试验温度	试验条件			legacy_taxonomy_seed	60	temperature			
+prop:884987efdd513d3a8d85	试验结果	试验结果	试验结果			legacy_taxonomy_seed	60				
+prop:d0141d5b8faa965fd1da	质量	质量	物理属性			legacy_taxonomy_seed	60				
+prop:df63887045bdb0f7a70e	质量变化	质量变化	试验结果			legacy_taxonomy_seed	60				
+prop:09a24a69f57c1256c71b	贮存期	贮存期	稳定性			legacy_taxonomy_seed	60				
+prop:c99adf6fbd70f4e44816	贮存稳定性	贮存稳定性	稳定性			legacy_taxonomy_seed	60				
+prop:828b27f1c121a50a38ea	转化率	转化率	试验结果			legacy_taxonomy_seed	60				
+prop:24dd3110d004f1a273f2	转速	转速	工艺参数			legacy_taxonomy_seed	60				
+prop:49a004062916a017c71c	载荷	载荷	试验条件			legacy_taxonomy_seed	60				
+prop:43e165347633e7c1727a	运输信息	运输信息	储存/运输			legacy_taxonomy_seed	60				
+prop:2b22446cd3678188028f	适用于	适用于	应用			legacy_taxonomy_seed	60				
+prop:17f0b513f59126a0a413	适用范围	应用场景	应用			legacy_taxonomy_seed	60				
+prop:cb8e52cf87d6933fe81d	速度	速度	工艺参数			legacy_taxonomy_seed	60				
+prop:c63a1834c7a5878aba25	造粒	造粒	制备工艺			legacy_taxonomy_seed	60				
+prop:e1037a00c314c0b484b7	配伍性	配伍性	相容性			legacy_taxonomy_seed	60				
+prop:bc5d6e1b84c7450dc4bf	配方	配方组成	组成/配方			legacy_taxonomy_seed	60				
+prop:2f2c70f4850af2811f1c	配方编号	配方编号	标识信息			legacy_taxonomy_seed	60				
+prop:3600c10b1b324ebc5ca2	酸值	酸值	化学属性			legacy_taxonomy_seed	60				
+prop:d62f77218c0cb22e4816	长处	长处	优点			legacy_taxonomy_seed	60				
+prop:fb032412138a38c66ce0	闪点	闪点	物理属性			legacy_taxonomy_seed	60	temperature			
+prop:8e48cb8958e68a6a9f95	问题	问题	缺点			legacy_taxonomy_seed	60				
+prop:62541a42a21cacae1ad8	阈值	阈值	标准/要求			legacy_taxonomy_seed	60				
+prop:2cbbd9d4dcdbdc823823	降低	降低	性能影响			legacy_taxonomy_seed	60				
+prop:e0c95edaf1ae0b44c1e1	限值	限值	标准/要求			legacy_taxonomy_seed	60				
+prop:4880c1bd7f5829d5eb50	限制	限制	缺点			legacy_taxonomy_seed	60				
+prop:ba81b85795c5ef4d70c5	限制因素	限制因素	影响因素			legacy_taxonomy_seed	60				
+prop:a100e1d5a37416c77393	隶属于	隶属于	分类			legacy_taxonomy_seed	60				
+prop:9199741f4186f9cdc967	颜色	颜色	物理属性			legacy_taxonomy_seed	60				
+prop:c8321489141e328ea4d9	黏度	粘度	物理属性			legacy_taxonomy_seed	60				
+prop:6364c8f39e078074c949	黏结强度	黏结强度	力学性能			legacy_taxonomy_seed	60				
+prop:0d98ec952c4e48a9b1be	al2o3	氧化铝含量	化学属性			legacy_english_seed	55	fraction	metric		
+prop:669b07fa15a214dd241d	application	应用场景	应用			legacy_english_seed	55				
+prop:d6d744c43e0974ae43b2	applications	应用场景	应用			legacy_english_seed	55				
+prop:ddb3c02930c6474899fa	burn rate	燃速	燃烧性能			legacy_english_seed	55	burning_rate	metric		
+prop:a197239401ced0ab4db9	burning rate	燃速	燃烧性能			legacy_english_seed	55	burning_rate	metric		
+prop:40ca09c93710f76d7c96	burning temperature	燃烧温度	燃烧性能			legacy_english_seed	55	temperature	metric		
+prop:3cfd8ded82b2d7dd0a93	candidate fuel	候选燃料用途	应用			legacy_english_seed	55				
+prop:9944674b457ed718ebd6	characterization method	表征方法	测试/检测方法			legacy_english_seed	55		method		
+prop:e2d4b2b88cd1144aa175	chinese name	中文名称	标识信息			legacy_english_seed	55				
+prop:c2f9fb8f7f000e78041a	co	一氧化碳含量	化学属性			legacy_english_seed	55	fraction	metric		
+prop:b64e0fd601b3c8d747b6	co2	二氧化碳含量	化学属性			legacy_english_seed	55	fraction	metric		
+prop:9f025b4ec79d86ec9316	coating	包覆	制备工艺			legacy_english_seed	55		process		
+prop:ecb0880231a6c2e05c8b	coating technique	包覆工艺	制备工艺			legacy_english_seed	55		process		
+prop:b5b9c97e4207c16dc110	coating techniques	包覆工艺	制备工艺			legacy_english_seed	55		process		
+prop:4e301166a6f0bcea4745	combustion performance	燃烧性能	燃烧性能			legacy_english_seed	55		metric		
+prop:bae7c74ef6725c1d3f88	combustion temperature	燃烧温度	燃烧性能			legacy_english_seed	55	temperature	metric		
+prop:f9af3c72a4af3781fa5f	density	密度	物理属性			legacy_english_seed	55	density	metric		
+prop:ff3f77d7f5e6872ee17e	english name	英文名称	标识信息			legacy_english_seed	55				
+prop:5cbbb31227c1837cac64	enthalpy	焓	热性能			legacy_english_seed	55		metric		
+prop:d951072e7d33b021fc6a	flame temperature	火焰温度	燃烧性能			legacy_english_seed	55	temperature	metric		
+prop:f9abe21760034fdcd883	fuel-rich solid rocket propellants	应用对象	应用			legacy_english_seed	55				
+prop:267a6aa40b7f9315ef2f	granulation	造粒	制备工艺			legacy_english_seed	55		process		
+prop:482543e577b8c6789e12	gravimetric heat of combustion	质量燃烧热	燃烧性能			legacy_english_seed	55	energy_per_mass	metric		
+prop:6a6a08abbd13d2ef6da5	h0	生成焓	热性能			legacy_english_seed	55	energy_per_mole	metric		
+prop:cb135023a550c07476db	h2	氢气含量	化学属性			legacy_english_seed	55	fraction	metric		
+prop:1afb3d30a0db13b9bfbc	h2o	水含量	化学属性			legacy_english_seed	55	fraction	metric		
+prop:e1b54bc06ce2b4aefc1b	hcl	氯化氢含量	化学属性			legacy_english_seed	55	fraction	metric		
+prop:12c8e234ad42a1b2326c	heat of combustion	燃烧热	燃烧性能			legacy_english_seed	55	energy_per_mass	metric		
+prop:9fb528f9bf13ed7eaa8e	heat value	热值	热性能			legacy_english_seed	55		metric		
+prop:7187b05b44d66c6feb0e	isp	比冲	燃烧性能			legacy_english_seed	55	specific_impulse	metric		
+prop:a43aab19ffc533278add	maximum pressure	最大压力	燃烧性能			legacy_english_seed	55	pressure	metric		
+prop:40c805d0f02274177daf	n2	氮气含量	化学属性			legacy_english_seed	55	fraction	metric		
+prop:adb56d377db433d7dcc1	particle size	粒径	物理属性			legacy_english_seed	55	length	metric		
+prop:e20249f7d7aa9a296e8c	pm	最大压力	燃烧性能			legacy_english_seed	55	pressure	metric		
+prop:70498fc7c255b527cb7f	pmax	最大压力	燃烧性能			legacy_english_seed	55	pressure	metric		
+prop:9c4d855263fe0687c9b7	power devices	动力装置应用	应用			legacy_english_seed	55				
+prop:0743f27393762c481236	preparation	制备方法	制备工艺			legacy_english_seed	55		process		
+prop:799a6792eb40ac91cfa2	pressure exponent	燃速压力指数	燃烧性能			legacy_english_seed	55	pressure|burning_rate	metric		
+prop:2f3ede5afe3c66a94cd3	processing method	加工方法	制备工艺			legacy_english_seed	55		process		
+prop:cb4249aab2e8273e9315	processing methods	加工方法	制备工艺			legacy_english_seed	55		process		
+prop:e82cda5b0ce32d6081ce	solid rocket ramjets	应用对象	应用			legacy_english_seed	55				
+prop:5d17d9f5ff7022d8aacf	specific impulse	比冲	燃烧性能			legacy_english_seed	55	specific_impulse	metric		
+prop:7ad97b56c49b823bc1ff	specific surface area	比表面积	物理属性			legacy_english_seed	55		metric		
+prop:f2392fdcc4749cb4e6e1	surface area	比表面积	物理属性			legacy_english_seed	55		metric		
+prop:b326b42c7e39703648bf	surface modification	表面改性	制备工艺			legacy_english_seed	55		process		
+prop:7b6cb18eff30514a470e	surface modifications	表面改性	制备工艺			legacy_english_seed	55		process		
+prop:a1a91a4dfc7f7b3d687f	synthesis	合成方法	制备工艺			legacy_english_seed	55		process		
+prop:035b9d93140c6aaee850	te	燃烧温度	燃烧性能			legacy_english_seed	55	temperature	metric		
+prop:da887778aca84b1db909	volumetric heat of combustion	体积燃烧热	燃烧性能			legacy_english_seed	55	energy_per_mass	metric		
+prop:ec6f71d5ee96d8ee65d6	发火电压	发火电压	安全性能			phase95_general_metric_seed	92	voltage			
+prop:fd912e8ce633d92ac3c2	熄灭长度	熄灭长度	爆轰/爆炸性能			phase95_general_metric_seed	92	length			
+prop:0f4dff8274bddf57aa00	DSC温度T	DSC温度T	热性能			phase95_analytical_leaf_seed	94	temperature	metric		
+prop:8edd77c0fd2d924b3463	DSC起始温度To	DSC起始温度To	热性能			phase95_analytical_leaf_seed	94	temperature	metric		
+prop:3fc76bc512c9d01a7b16	DSC外推起始温度Texon	DSC外推起始温度Texon	热性能			phase95_analytical_leaf_seed	94	temperature	metric		
+prop:a2d1e3ecf63b4e800bfb	DSC分解温度Td	DSC分解温度Td	热性能			phase95_analytical_leaf_seed	94	temperature	metric		
+prop:f082628506c7ad4a74bd	DSC玻璃化温度Tg	DSC玻璃化温度Tg	热性能			phase95_analytical_leaf_seed	94	temperature	metric		
+prop:8b8dbe8be6aaf5a41110	DSC峰值温度Tp	DSC峰值温度Tp	热性能			phase95_analytical_leaf_seed	94	temperature	metric		
+prop:1bb220d6dbf130f8528b	DSC熔融温度Tm	DSC熔融温度Tm	热性能			phase95_analytical_leaf_seed	94	temperature	metric		
+prop:35a28701d5b88d3c744c	TG分解温度Td	TG分解温度Td	热性能			phase95_analytical_leaf_seed	94	temperature	metric		
+prop:51531e353e930bfc3ab0	DTG-TG分解温度Td	DTG-TG分解温度Td	热性能			phase95_analytical_leaf_seed	94	temperature	metric		

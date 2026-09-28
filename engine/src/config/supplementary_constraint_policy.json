@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "enabled": true,
+  "property_alias_enabled": true,
+  "relation_normalization_enabled": true,
+  "subject_deny_enabled": true,
+  "subject_deny_action": "manual_review",
+  "subject_lexicon_audit_enabled": true,
+  "notes": "Derived from legacy rawarrange resources. Exact deny-list matches are routed to manual review, never silently deleted. Subject lexicon matches are audit-only and never mandatory."
+}

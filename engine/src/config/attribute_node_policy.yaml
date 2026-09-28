@@ -1,0 +1,86 @@
+version: strict_generic_attribute_node_policy_v24_5_48
+principles:
+  - attribute_category is a stable upper-level knowledge dimension.
+  - attribute_name is a noun-like attribute item or metric, never a verb/predicate.
+  - edge_verb stores action semantics such as 用于, 通过, 分为, 包含, 提高, 降低.
+  - category_key and attribute_key are mandatory for Neo4j imports.
+  - category and attribute display names should not be identical.
+canonical_categories:
+  - 定义
+  - 别名
+  - 分类
+  - 组成/配方
+  - 物理属性
+  - 化学属性
+  - 热性能
+  - 燃烧性能
+  - 燃烧/爆炸性能
+  - 爆轰/爆炸性能
+  - 安全性能
+  - 力学性能
+  - 稳定性
+  - 相容性
+  - 结构/形貌
+  - 制备与加工
+  - 工艺参数
+  - 测试/检测方法
+  - 试验条件
+  - 试验结果
+  - 应用
+  - 影响因素
+  - 设备/装置
+  - 标准/法规
+  - 包装/运输
+  - 储运/仓储
+  - 安全与监管
+  - 作用机制
+  - 过程结果
+  - 其他属性
+forbidden_attribute_name_patterns:
+  - 用于
+  - 通过
+  - 采用
+  - 利用
+  - 分为
+  - 属于
+  - 包括
+  - 包含
+  - 具有
+  - 提高
+  - 降低
+  - 产生
+  - 生成
+  - 取决于
+  - 决定于
+  - 与.*有关
+  - 影响
+  - 基于
+same_name_fallbacks:
+  定义: 概念定义
+  别名: 别名名称
+  分类: 分类结果
+  组成/配方: 组分
+  物理属性: 物理属性项
+  化学属性: 化学属性项
+  热性能: 热性能指标
+  燃烧性能: 燃烧性能指标
+  爆轰/爆炸性能: 爆轰性能指标
+  安全性能: 安全指标
+  力学性能: 力学性能指标
+  稳定性: 稳定性指标
+  相容性: 相容性指标
+  结构/形貌: 结构特征
+  制备与加工: 工艺方法
+  工艺参数: 工艺参数项
+  测试/检测方法: 测试方法
+  试验条件: 试验条件项
+  试验结果: 试验结果项
+  应用: 应用场景
+  影响因素: 影响因素项
+  设备/装置: 设备类型
+  标准/法规: 标准法规项
+  包装/运输: 包装运输要求
+  安全与监管: 安全管理事项
+neo4j_keys:
+  category_key: "cat::<normalized attribute_category>"
+  attribute_key: "<category_key>::attr::<normalized attribute_name>"

@@ -1,0 +1,1 @@
+"""Versioned extraction profile configuration."""

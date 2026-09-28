@@ -1,0 +1,548 @@
+﻿alias	canonical_name	attribute_category	root_system	ontology_path	source	priority	unit_dimensions	allowed_value_roles	context_positive	context_negative
+简称	别名	别名			curated_override	95				
+英文名	英文名称	标识信息			curated_override	95				
+英文名称	英文名称	标识信息			curated_override	95				
+中文名	中文名称	标识信息			curated_override	95				
+中文名称	中文名称	标识信息			curated_override	95				
+CAS登记号	CAS号	标识信息			curated_override	95				
+CAS号	CAS号	标识信息			curated_override	95				
+分子式	分子式	化学属性			curated_override	95				
+化学式	化学式	化学属性			curated_override	95				
+分子量	分子量	物理属性			curated_override	95	molar_mass			
+相对分子质量	分子量	物理属性			curated_override	95	molar_mass			
+用途	用途	用途			curated_override	95				
+应用	应用场景	应用			curated_override	95				
+应用领域	应用场景	应用			curated_override	95				
+用于	应用场景	应用			curated_override	95				
+用作	用途	用途			curated_override	95				
+组成	组成	组成/配方			curated_override	95				
+组分	组成	组成/配方			curated_override	95				
+成分	组成	组成/配方			curated_override	95				
+含量	含量	组成/配方			curated_override	95	fraction			
+质量分数	质量分数	组成/配方			curated_override	95	fraction			
+配比	配比	组成/配方			curated_override	95				
+粒径	粒径	物理属性			curated_override	95	length			
+粒度	粒度	物理属性			curated_override	95	length			
+晶型	晶型	结构/形貌			curated_override	95				
+形貌	形貌	结构/形貌			curated_override	95				
+爆速	爆速	爆轰/爆炸性能			curated_override	95	detonation_velocity			
+爆压	爆压	爆轰/爆炸性能			curated_override	95	pressure			
+猛度	猛度	爆轰/爆炸性能			curated_override	95				
+威力	威力	爆轰/爆炸性能			curated_override	95				
+燃速	燃速	燃烧性能			curated_override	95	burning_rate			
+比冲	比冲	燃烧性能			curated_override	95	specific_impulse			
+压力指数	燃速压力指数	燃烧性能			curated_override	95	pressure|burning_rate			
+撞击感度	撞击感度	安全性能			curated_override	95	sensitivity			
+冲击感度	冲击感度	安全性能			curated_override	95	sensitivity			
+摩擦感度	摩擦感度	安全性能			curated_override	95	sensitivity			
+静电感度	静电感度	安全性能			curated_override	95	sensitivity			
+毒性	毒性	毒理/环境			curated_override	95				
+LD50	半数致死剂量	毒理/环境			curated_override	95	dose			
+半数致死剂量	半数致死剂量	毒理/环境			curated_override	95	dose			
+储存	储存要求	储存/运输			curated_override	95				
+贮存	储存要求	储存/运输			curated_override	95				
+运输	运输要求	储存/运输			curated_override	95				
+包装	包装要求	储存/运输			curated_override	95				
+测试方法	测试方法	测试/检测方法			curated_override	95				
+检验方法	检验方法	测试/检测方法			curated_override	95				
+检测方法	检测方法	测试/检测方法			curated_override	95				
+表征方法	表征方法	测试/检测方法			curated_override	95				
+制备方法	制备方法	制备工艺			curated_override	95				
+合成方法	合成方法	制备工艺			curated_override	95				
+结晶方法	结晶方法	制备工艺			curated_override	95				
+定义	定义	定义			legacy_taxonomy_seed	60				
+概念定义	概念定义	定义			legacy_taxonomy_seed	60				
+是指	是指	定义			legacy_taxonomy_seed	60				
+系指	系指	定义			legacy_taxonomy_seed	60				
+定义为	定义为	定义			legacy_taxonomy_seed	60				
+称为	称为	定义			legacy_taxonomy_seed	60				
+称作	称作	定义			legacy_taxonomy_seed	60				
+叫做	叫做	定义			legacy_taxonomy_seed	60				
+叫作	叫作	定义			legacy_taxonomy_seed	60				
+统称	统称	定义			legacy_taxonomy_seed	60				
+概念	概念	定义			legacy_taxonomy_seed	60				
+含义	含义	定义			legacy_taxonomy_seed	60				
+分类	分类	分类			legacy_taxonomy_seed	60				
+类别	类别	分类			legacy_taxonomy_seed	60				
+类型	类型	分类			legacy_taxonomy_seed	60				
+种类	种类	分类			legacy_taxonomy_seed	60				
+属于	属于	分类			legacy_taxonomy_seed	60				
+隶属于	隶属于	分类			legacy_taxonomy_seed	60				
+归属	归属	分类			legacy_taxonomy_seed	60				
+归为	归为	分类			legacy_taxonomy_seed	60				
+是...一种	是...一种	分类			legacy_taxonomy_seed	60				
+分为	分为	分类			legacy_taxonomy_seed	60				
+别名	别名	别名			legacy_taxonomy_seed	60				
+又称	又称	别名			legacy_taxonomy_seed	60				
+俗称	俗称	别名			legacy_taxonomy_seed	60				
+代号	代号	别名			legacy_taxonomy_seed	60				
+缩写	缩写	别名			legacy_taxonomy_seed	60				
+编号	编号	别名			legacy_taxonomy_seed	60				
+商品名	商品名	别名			legacy_taxonomy_seed	60				
+配方	配方组成	组成/配方			legacy_taxonomy_seed	60				
+组成成分	组成	组成/配方			legacy_taxonomy_seed	60				
+主要成分	组成	组成/配方			legacy_taxonomy_seed	60				
+含有	含有	组成/配方			legacy_taxonomy_seed	60				
+具有组成	具有组成	组成/配方			legacy_taxonomy_seed	60				
+由...组成	由...组成	组成/配方			legacy_taxonomy_seed	60				
+包含	包含	组成/配方			legacy_taxonomy_seed	60				
+比例	比例	组成/配方			legacy_taxonomy_seed	60				
+剂量	剂量	组成/配方			legacy_taxonomy_seed	60				
+药量	药量	组成/配方			legacy_taxonomy_seed	60				
+组成/配方	组成/配方	组成/配方			legacy_taxonomy_seed	60				
+结构	结构	结构/形貌			legacy_taxonomy_seed	60				
+粒形	粒形	结构/形貌			legacy_taxonomy_seed	60				
+粒貌	粒貌	结构/形貌			legacy_taxonomy_seed	60				
+微观结构	微观结构	结构/形貌			legacy_taxonomy_seed	60				
+孔结构	孔结构	结构/形貌			legacy_taxonomy_seed	60				
+表面形貌	表面形貌	结构/形貌			legacy_taxonomy_seed	60				
+团聚状态	团聚状态	结构/形貌			legacy_taxonomy_seed	60				
+粒径分布	粒径分布	结构/形貌			legacy_taxonomy_seed	60	length			
+结构/形貌	结构/形貌	结构/形貌			legacy_taxonomy_seed	60				
+物理属性	物理属性	物理属性			legacy_taxonomy_seed	60				
+物理性质	物理性质	物理属性			legacy_taxonomy_seed	60				
+物性	物性	物理属性			legacy_taxonomy_seed	60				
+密度	密度	物理属性			legacy_taxonomy_seed	60	density			
+熔点	熔点	物理属性			legacy_taxonomy_seed	60	temperature			
+沸点	沸点	物理属性			legacy_taxonomy_seed	60	temperature			
+闪点	闪点	物理属性			legacy_taxonomy_seed	60	temperature			
+颜色	颜色	物理属性			legacy_taxonomy_seed	60				
+外观	外观	物理属性			legacy_taxonomy_seed	60				
+形态	形态	物理属性			legacy_taxonomy_seed	60				
+状态	状态	物理属性			legacy_taxonomy_seed	60				
+比表面积	比表面积	物理属性			legacy_taxonomy_seed	60				
+孔径	孔径	物理属性			legacy_taxonomy_seed	60				
+体积	体积	物理属性			legacy_taxonomy_seed	60				
+质量	质量	物理属性			legacy_taxonomy_seed	60				
+粘度	粘度	物理属性			legacy_taxonomy_seed	60				
+黏度	粘度	物理属性			legacy_taxonomy_seed	60				
+折射率	折射率	物理属性			legacy_taxonomy_seed	60				
+硬度	硬度	物理属性			legacy_taxonomy_seed	60				
+体积增加	体积增加	物理属性			legacy_taxonomy_seed	60				
+体积增加ΔV	体积增加ΔV	物理属性			legacy_taxonomy_seed	60				
+体积增加△V	体积增加△V	物理属性			legacy_taxonomy_seed	60				
+化学属性	化学属性	化学属性			legacy_taxonomy_seed	60				
+化学性质	化学性质	化学属性			legacy_taxonomy_seed	60				
+结构式	结构式	化学属性			legacy_taxonomy_seed	60				
+分子结构	分子结构	化学属性			legacy_taxonomy_seed	60				
+官能团	官能团	化学属性			legacy_taxonomy_seed	60				
+氧平衡	氧平衡	化学属性			legacy_taxonomy_seed	60				
+酸值	酸值	化学属性			legacy_taxonomy_seed	60				
+碱值	碱值	化学属性			legacy_taxonomy_seed	60				
+反应活性	反应活性	化学属性			legacy_taxonomy_seed	60				
+化学稳定性	化学稳定性	化学属性			legacy_taxonomy_seed	60				
+生成焓	生成焓	化学属性			legacy_taxonomy_seed	60	energy_per_mole			
+燃烧产物	燃烧产物	化学属性			legacy_taxonomy_seed	60				
+化学组成	化学组成	化学属性			legacy_taxonomy_seed	60				
+热性能	热性能	热性能			legacy_taxonomy_seed	60				
+热性质	热性质	热性能			legacy_taxonomy_seed	60				
+热稳定性	热稳定性	热性能			legacy_taxonomy_seed	60				
+热分解	热分解	热性能			legacy_taxonomy_seed	60				
+分解温度	分解温度	热性能			legacy_taxonomy_seed	60	temperature			
+热分解温度	热分解温度	热性能			legacy_taxonomy_seed	60	temperature			
+热容量	热容量	热性能			legacy_taxonomy_seed	60	heat_capacity			
+热导率	热导率	热性能			legacy_taxonomy_seed	60	thermal_conductivity			
+玻璃化温度	玻璃化温度	热性能			legacy_taxonomy_seed	60	temperature			
+热失重	热失重	热性能			legacy_taxonomy_seed	60				
+DSC	DSC	热性能			legacy_taxonomy_seed	60				
+TG	TG	热性能			legacy_taxonomy_seed	60				
+放热峰	放热峰	热性能			legacy_taxonomy_seed	60				
+吸热峰	吸热峰	热性能			legacy_taxonomy_seed	60				
+热爆炸临界温度	热爆炸临界温度	热性能			legacy_taxonomy_seed	60	temperature			
+燃烧性能	燃烧性能	燃烧性能			legacy_taxonomy_seed	60				
+燃烧性质	燃烧性质	燃烧性能			legacy_taxonomy_seed	60				
+燃烧速度	燃烧速度	燃烧性能			legacy_taxonomy_seed	60				
+燃温	燃温	燃烧性能			legacy_taxonomy_seed	60				
+燃烧温度	燃烧温度	燃烧性能			legacy_taxonomy_seed	60	temperature			
+燃速压力指数	燃速压力指数	燃烧性能			legacy_taxonomy_seed	60	pressure|burning_rate			
+特征速度	特征速度	燃烧性能			legacy_taxonomy_seed	60				
+火药力	火药力	燃烧性能			legacy_taxonomy_seed	60				
+余容	余容	燃烧性能			legacy_taxonomy_seed	60				
+爆热	爆热	燃烧性能			legacy_taxonomy_seed	60	energy_per_mass			
+比容	比容	燃烧性能			legacy_taxonomy_seed	60				
+燃烧效率	燃烧效率	燃烧性能			legacy_taxonomy_seed	60				
+低压燃速	低压燃速	燃烧性能			legacy_taxonomy_seed	60	burning_rate			
+平台燃烧	平台燃烧	燃烧性能			legacy_taxonomy_seed	60				
+侵蚀燃烧	侵蚀燃烧	燃烧性能			legacy_taxonomy_seed	60				
+爆轰性能	爆轰性能	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+爆炸性能	爆炸性能	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+作功能力	作功能力	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+临界直径	临界直径	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+爆轰压力	爆轰压力	爆轰/爆炸性能			legacy_taxonomy_seed	60	pressure			
+爆炸威力	爆炸威力	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+爆轰/爆炸性能	爆轰/爆炸性能	爆轰/爆炸性能			legacy_taxonomy_seed	60				
+力学性能	力学性能	力学性能			legacy_taxonomy_seed	60				
+机械性能	机械性能	力学性能			legacy_taxonomy_seed	60				
+强度	强度	力学性能			legacy_taxonomy_seed	60				
+拉伸强度	拉伸强度	力学性能			legacy_taxonomy_seed	60				
+压缩强度	压缩强度	力学性能			legacy_taxonomy_seed	60				
+断裂伸长率	断裂伸长率	力学性能			legacy_taxonomy_seed	60				
+模量	模量	力学性能			legacy_taxonomy_seed	60				
+弹性模量	弹性模量	力学性能			legacy_taxonomy_seed	60				
+泊松比	泊松比	力学性能			legacy_taxonomy_seed	60				
+粘结强度	粘结强度	力学性能			legacy_taxonomy_seed	60				
+黏结强度	黏结强度	力学性能			legacy_taxonomy_seed	60				
+抗压强度	抗压强度	力学性能			legacy_taxonomy_seed	60				
+安全性能	安全性能	安全性能			legacy_taxonomy_seed	60				
+安全性	安全性	安全性能			legacy_taxonomy_seed	60				
+感度	感度	安全性能			legacy_taxonomy_seed	60	sensitivity			
+火焰感度	火焰感度	安全性能			legacy_taxonomy_seed	60	sensitivity			
+热感度	热感度	安全性能			legacy_taxonomy_seed	60	sensitivity			
+危险性	危险性	安全性能			legacy_taxonomy_seed	60				
+危险类别	危险类别	安全性能			legacy_taxonomy_seed	60				
+危险等级	危险等级	安全性能			legacy_taxonomy_seed	60				
+安定性	安定性	安全性能			legacy_taxonomy_seed	60				
+安全操作	安全操作	安全性能			legacy_taxonomy_seed	60				
+燃爆危险性	燃爆危险性	安全性能			legacy_taxonomy_seed	60				
+稳定性	稳定性	稳定性			legacy_taxonomy_seed	60				
+贮存稳定性	贮存稳定性	稳定性			legacy_taxonomy_seed	60				
+储存稳定性	储存稳定性	稳定性			legacy_taxonomy_seed	60				
+老化性能	老化性能	稳定性			legacy_taxonomy_seed	60				
+保存期	保存期	稳定性			legacy_taxonomy_seed	60				
+贮存期	贮存期	稳定性			legacy_taxonomy_seed	60				
+相容性	相容性	相容性			legacy_taxonomy_seed	60				
+兼容性	兼容性	相容性			legacy_taxonomy_seed	60				
+配伍性	配伍性	相容性			legacy_taxonomy_seed	60				
+相容	相容	相容性			legacy_taxonomy_seed	60				
+不相容	不相容	相容性			legacy_taxonomy_seed	60				
+相容性评价	相容性评价	相容性			legacy_taxonomy_seed	60				
+工艺参数	工艺参数	工艺参数			legacy_taxonomy_seed	60				
+温度	温度	工艺参数			legacy_taxonomy_seed	60	temperature			
+压力	压力	工艺参数			legacy_taxonomy_seed	60	pressure			
+时间	时间	工艺参数			legacy_taxonomy_seed	60	time			
+转速	转速	工艺参数			legacy_taxonomy_seed	60				
+速度	速度	工艺参数			legacy_taxonomy_seed	60				
+流量	流量	工艺参数			legacy_taxonomy_seed	60				
+浓度	浓度	工艺参数			legacy_taxonomy_seed	60				
+pH	pH	工艺参数			legacy_taxonomy_seed	60				
+真空度	真空度	工艺参数			legacy_taxonomy_seed	60				
+干燥温度	干燥温度	工艺参数			legacy_taxonomy_seed	60	temperature			
+混合时间	混合时间	工艺参数			legacy_taxonomy_seed	60	time			
+固化温度	固化温度	工艺参数			legacy_taxonomy_seed	60	temperature			
+固化时间	固化时间	工艺参数			legacy_taxonomy_seed	60	time			
+压制压力	压制压力	工艺参数			legacy_taxonomy_seed	60	pressure			
+制备	制备方法	制备工艺			legacy_taxonomy_seed	60				
+合成	合成方法	制备工艺			legacy_taxonomy_seed	60				
+制备工艺	制备工艺	制备工艺			legacy_taxonomy_seed	60				
+制备加工	制备加工	制备工艺			legacy_taxonomy_seed	60				
+制备与加工	制备与加工	制备工艺			legacy_taxonomy_seed	60				
+加工	加工方法	制备工艺			legacy_taxonomy_seed	60				
+制造	制造	制备工艺			legacy_taxonomy_seed	60				
+工艺流程	工艺流程	制备工艺			legacy_taxonomy_seed	60				
+工艺步骤	工艺步骤	制备工艺			legacy_taxonomy_seed	60				
+操作步骤	操作步骤	制备工艺			legacy_taxonomy_seed	60				
+改性方法	改性方法	制备工艺			legacy_taxonomy_seed	60				
+包覆	包覆	制备工艺			legacy_taxonomy_seed	60				
+造粒	造粒	制备工艺			legacy_taxonomy_seed	60				
+混合	混合	制备工艺			legacy_taxonomy_seed	60				
+固化	固化	制备工艺			legacy_taxonomy_seed	60				
+压制	压制	制备工艺			legacy_taxonomy_seed	60				
+干燥	干燥	制备工艺			legacy_taxonomy_seed	60				
+试验条件	试验条件	试验条件			legacy_taxonomy_seed	60				
+实验条件	实验条件	试验条件			legacy_taxonomy_seed	60				
+测试条件	测试条件	试验条件			legacy_taxonomy_seed	60				
+检测条件	检测条件	试验条件			legacy_taxonomy_seed	60				
+表征条件	表征条件	试验条件			legacy_taxonomy_seed	60				
+条件	条件	试验条件			legacy_taxonomy_seed	60				
+循环次数	循环次数	试验条件			legacy_taxonomy_seed	60				
+湿度	湿度	试验条件			legacy_taxonomy_seed	60				
+老化时间	老化时间	试验条件			legacy_taxonomy_seed	60	time			
+存放时间	存放时间	试验条件			legacy_taxonomy_seed	60	time			
+热循环	热循环	试验条件			legacy_taxonomy_seed	60				
+升温速率	升温速率	试验条件			legacy_taxonomy_seed	60				
+气氛	气氛	试验条件			legacy_taxonomy_seed	60				
+载荷	载荷	试验条件			legacy_taxonomy_seed	60				
+试验温度	试验温度	试验条件			legacy_taxonomy_seed	60	temperature			
+试验压力	试验压力	试验条件			legacy_taxonomy_seed	60	pressure			
+测试温度	测试温度	试验条件			legacy_taxonomy_seed	60	temperature			
+测试压力	测试压力	试验条件			legacy_taxonomy_seed	60	pressure			
+试验结果	试验结果	试验结果			legacy_taxonomy_seed	60				
+实验结果	实验结果	试验结果			legacy_taxonomy_seed	60				
+测试结果	测试结果	试验结果			legacy_taxonomy_seed	60				
+检测结果	检测结果	试验结果			legacy_taxonomy_seed	60				
+表征结果	表征结果	试验结果			legacy_taxonomy_seed	60				
+结果	结果	试验结果			legacy_taxonomy_seed	60				
+观测结果	观测结果	试验结果			legacy_taxonomy_seed	60				
+指标	指标	试验结果			legacy_taxonomy_seed	60				
+变化率	变化率	试验结果			legacy_taxonomy_seed	60				
+损失率	损失率	试验结果			legacy_taxonomy_seed	60				
+增量	增量	试验结果			legacy_taxonomy_seed	60				
+质量变化	质量变化	试验结果			legacy_taxonomy_seed	60				
+残留率	残留率	试验结果			legacy_taxonomy_seed	60				
+转化率	转化率	试验结果			legacy_taxonomy_seed	60				
+产率	产率	试验结果			legacy_taxonomy_seed	60				
+收率	收率	试验结果			legacy_taxonomy_seed	60				
+性能影响	性能影响	性能影响			legacy_taxonomy_seed	60				
+影响	影响	性能影响			legacy_taxonomy_seed	60				
+提高	提高	性能影响			legacy_taxonomy_seed	60				
+降低	降低	性能影响			legacy_taxonomy_seed	60				
+增加	增加	性能影响			legacy_taxonomy_seed	60				
+减少	减少	性能影响			legacy_taxonomy_seed	60				
+改善	改善	性能影响			legacy_taxonomy_seed	60				
+抑制	抑制	性能影响			legacy_taxonomy_seed	60				
+促进	促进	性能影响			legacy_taxonomy_seed	60				
+增强	增强	性能影响			legacy_taxonomy_seed	60				
+减弱	减弱	性能影响			legacy_taxonomy_seed	60				
+影响效果	影响效果	性能影响			legacy_taxonomy_seed	60				
+催化效果	催化效果	性能影响			legacy_taxonomy_seed	60				
+作用效果	作用效果	性能影响			legacy_taxonomy_seed	60				
+影响因素	影响因素	影响因素			legacy_taxonomy_seed	60				
+因素	因素	影响因素			legacy_taxonomy_seed	60				
+决定因素	决定因素	影响因素			legacy_taxonomy_seed	60				
+主要因素	主要因素	影响因素			legacy_taxonomy_seed	60				
+原因	原因	影响因素			legacy_taxonomy_seed	60				
+限制因素	限制因素	影响因素			legacy_taxonomy_seed	60				
+控制因素	控制因素	影响因素			legacy_taxonomy_seed	60				
+应用场景	应用场景	应用			legacy_taxonomy_seed	60				
+应用范围	应用场景	应用			legacy_taxonomy_seed	60				
+适用范围	应用场景	应用			legacy_taxonomy_seed	60				
+使用场合	使用场合	应用			legacy_taxonomy_seed	60				
+适用于	适用于	应用			legacy_taxonomy_seed	60				
+应用于	应用场景	应用			legacy_taxonomy_seed	60				
+可用于	应用场景	应用			legacy_taxonomy_seed	60				
+作为	用途	应用			legacy_taxonomy_seed	60				
+实际应用	应用场景	应用			legacy_taxonomy_seed	60				
+功能	功能	用途			legacy_taxonomy_seed	60				
+作用	作用	用途			legacy_taxonomy_seed	60				
+目的	目的	用途			legacy_taxonomy_seed	60				
+用来	用来	用途			legacy_taxonomy_seed	60				
+优点	优点	优点			legacy_taxonomy_seed	60				
+优势	优势	优点			legacy_taxonomy_seed	60				
+特点	特点	优点			legacy_taxonomy_seed	60				
+长处	长处	优点			legacy_taxonomy_seed	60				
+优良性能	优良性能	优点			legacy_taxonomy_seed	60				
+优异性能	优异性能	优点			legacy_taxonomy_seed	60				
+有利于	有利于	优点			legacy_taxonomy_seed	60				
+缺点	缺点	缺点			legacy_taxonomy_seed	60				
+不足	不足	缺点			legacy_taxonomy_seed	60				
+劣势	劣势	缺点			legacy_taxonomy_seed	60				
+问题	问题	缺点			legacy_taxonomy_seed	60				
+局限	局限	缺点			legacy_taxonomy_seed	60				
+限制	限制	缺点			legacy_taxonomy_seed	60				
+不利因素	不利因素	缺点			legacy_taxonomy_seed	60				
+缺陷	缺陷	缺点			legacy_taxonomy_seed	60				
+标准	标准	标准/要求			legacy_taxonomy_seed	60				
+要求	要求	标准/要求			legacy_taxonomy_seed	60				
+规范	规范	标准/要求			legacy_taxonomy_seed	60				
+指标要求	指标要求	标准/要求			legacy_taxonomy_seed	60				
+技术要求	技术要求	标准/要求			legacy_taxonomy_seed	60				
+设计要求	设计要求	标准/要求			legacy_taxonomy_seed	60				
+判据	判据	标准/要求			legacy_taxonomy_seed	60				
+准则	准则	标准/要求			legacy_taxonomy_seed	60				
+限值	限值	标准/要求			legacy_taxonomy_seed	60				
+阈值	阈值	标准/要求			legacy_taxonomy_seed	60				
+规定	规定	标准/要求			legacy_taxonomy_seed	60				
+标准/要求	标准/要求	标准/要求			legacy_taxonomy_seed	60				
+仓储	仓储	储存/运输			legacy_taxonomy_seed	60				
+存放	存放	储存/运输			legacy_taxonomy_seed	60				
+储运	储运	储存/运输			legacy_taxonomy_seed	60				
+运输信息	运输信息	储存/运输			legacy_taxonomy_seed	60				
+包装类别	包装类别	储存/运输			legacy_taxonomy_seed	60				
+保存条件	保存条件	储存/运输			legacy_taxonomy_seed	60				
+储存/运输	储存/运输	储存/运输			legacy_taxonomy_seed	60				
+毒理	毒理	毒理/环境			legacy_taxonomy_seed	60				
+生态毒性	生态毒性	毒理/环境			legacy_taxonomy_seed	60				
+环境影响	环境影响	毒理/环境			legacy_taxonomy_seed	60				
+环境危害	环境危害	毒理/环境			legacy_taxonomy_seed	60				
+健康危害	健康危害	毒理/环境			legacy_taxonomy_seed	60				
+LC50	LC50	毒理/环境			legacy_taxonomy_seed	60				
+EC50	EC50	毒理/环境			legacy_taxonomy_seed	60				
+生物降解	生物降解	毒理/环境			legacy_taxonomy_seed	60				
+污染	污染	毒理/环境			legacy_taxonomy_seed	60				
+毒理/环境	毒理/环境	毒理/环境			legacy_taxonomy_seed	60				
+模型	模型	模型/公式			legacy_taxonomy_seed	60				
+公式	公式	模型/公式			legacy_taxonomy_seed	60				
+方程	方程	模型/公式			legacy_taxonomy_seed	60				
+计算式	计算式	模型/公式			legacy_taxonomy_seed	60				
+算法	算法	模型/公式			legacy_taxonomy_seed	60				
+参数模型	参数模型	模型/公式			legacy_taxonomy_seed	60				
+拟合式	拟合式	模型/公式			legacy_taxonomy_seed	60				
+关系式	关系式	模型/公式			legacy_taxonomy_seed	60				
+表达式	表达式	模型/公式			legacy_taxonomy_seed	60				
+模型/公式	模型/公式	模型/公式			legacy_taxonomy_seed	60				
+来源	来源	来源/出处			legacy_taxonomy_seed	60				
+出处	出处	来源/出处			legacy_taxonomy_seed	60				
+文献	文献	来源/出处			legacy_taxonomy_seed	60				
+参考文献	参考文献	来源/出处			legacy_taxonomy_seed	60				
+作者	作者	来源/出处			legacy_taxonomy_seed	60				
+年代	年代	来源/出处			legacy_taxonomy_seed	60				
+发表于	发表于	来源/出处			legacy_taxonomy_seed	60				
+提出	提出	来源/出处			legacy_taxonomy_seed	60				
+报道	报道	来源/出处			legacy_taxonomy_seed	60				
+来源/出处	来源/出处	来源/出处			legacy_taxonomy_seed	60				
+测试/检测方法	测试/检测方法	测试/检测方法			legacy_taxonomy_seed	60				
+检测	检测方法	测试/检测方法			legacy_taxonomy_seed	60				
+表征	表征方法	测试/检测方法			legacy_taxonomy_seed	60				
+characterization	characterization	测试/检测方法			legacy_taxonomy_seed	60				
+test method	test method	测试/检测方法			legacy_taxonomy_seed	60				
+detection method	detection method	测试/检测方法			legacy_taxonomy_seed	60				
+型号	型号	标识信息			legacy_taxonomy_seed	60				
+牌号	牌号	标识信息			legacy_taxonomy_seed	60				
+样品编号	样品编号	标识信息			legacy_taxonomy_seed	60				
+试样编号	试样编号	标识信息			legacy_taxonomy_seed	60				
+配方编号	配方编号	标识信息			legacy_taxonomy_seed	60				
+model	model	标识信息			legacy_taxonomy_seed	60				
+type	type	标识信息			legacy_taxonomy_seed	60				
+标识信息	标识信息	标识信息			legacy_taxonomy_seed	60				
+heat of combustion	燃烧热	燃烧性能			legacy_english_seed	55	energy_per_mass	metric		
+gravimetric heat of combustion	质量燃烧热	燃烧性能			legacy_english_seed	55	energy_per_mass	metric		
+volumetric heat of combustion	体积燃烧热	燃烧性能			legacy_english_seed	55	energy_per_mass	metric		
+combustion performance	燃烧性能	燃烧性能			legacy_english_seed	55		metric		
+burning rate	燃速	燃烧性能			legacy_english_seed	55	burning_rate	metric		
+burn rate	燃速	燃烧性能			legacy_english_seed	55	burning_rate	metric		
+pressure exponent	燃速压力指数	燃烧性能			legacy_english_seed	55	pressure|burning_rate	metric		
+specific impulse	比冲	燃烧性能			legacy_english_seed	55	specific_impulse	metric		
+isp	比冲	燃烧性能			legacy_english_seed	55	specific_impulse	metric		
+flame temperature	火焰温度	燃烧性能			legacy_english_seed	55	temperature	metric		
+combustion temperature	燃烧温度	燃烧性能			legacy_english_seed	55	temperature	metric		
+burning temperature	燃烧温度	燃烧性能			legacy_english_seed	55	temperature	metric		
+te	燃烧温度	燃烧性能			legacy_english_seed	55	temperature	metric		
+pm	最大压力	燃烧性能			legacy_english_seed	55	pressure	metric		
+pmax	最大压力	燃烧性能			legacy_english_seed	55	pressure	metric		
+maximum pressure	最大压力	燃烧性能			legacy_english_seed	55	pressure	metric		
+h0	生成焓	热性能			legacy_english_seed	55	energy_per_mole	metric		
+enthalpy	焓	热性能			legacy_english_seed	55		metric		
+heat value	热值	热性能			legacy_english_seed	55		metric		
+density	密度	物理属性			legacy_english_seed	55	density	metric		
+particle size	粒径	物理属性			legacy_english_seed	55	length	metric		
+surface area	比表面积	物理属性			legacy_english_seed	55		metric		
+specific surface area	比表面积	物理属性			legacy_english_seed	55		metric		
+surface modification	表面改性	制备工艺			legacy_english_seed	55		process		
+surface modifications	表面改性	制备工艺			legacy_english_seed	55		process		
+coating technique	包覆工艺	制备工艺			legacy_english_seed	55		process		
+coating techniques	包覆工艺	制备工艺			legacy_english_seed	55		process		
+coating	包覆	制备工艺			legacy_english_seed	55		process		
+granulation	造粒	制备工艺			legacy_english_seed	55		process		
+processing method	加工方法	制备工艺			legacy_english_seed	55		process		
+processing methods	加工方法	制备工艺			legacy_english_seed	55		process		
+preparation	制备方法	制备工艺			legacy_english_seed	55		process		
+synthesis	合成方法	制备工艺			legacy_english_seed	55		process		
+characterization method	表征方法	测试/检测方法			legacy_english_seed	55		method		
+application	应用场景	应用			legacy_english_seed	55				
+applications	应用场景	应用			legacy_english_seed	55				
+candidate fuel	候选燃料用途	应用			legacy_english_seed	55				
+fuel-rich solid rocket propellants	应用对象	应用			legacy_english_seed	55				
+solid rocket ramjets	应用对象	应用			legacy_english_seed	55				
+power devices	动力装置应用	应用			legacy_english_seed	55				
+n2	氮气含量	化学属性			legacy_english_seed	55	fraction	metric		
+co	一氧化碳含量	化学属性			legacy_english_seed	55	fraction	metric		
+co2	二氧化碳含量	化学属性			legacy_english_seed	55	fraction	metric		
+h2	氢气含量	化学属性			legacy_english_seed	55	fraction	metric		
+h2o	水含量	化学属性			legacy_english_seed	55	fraction	metric		
+hcl	氯化氢含量	化学属性			legacy_english_seed	55	fraction	metric		
+al2o3	氧化铝含量	化学属性			legacy_english_seed	55	fraction	metric		
+chinese name	中文名称	标识信息			legacy_english_seed	55				
+english name	英文名称	标识信息			legacy_english_seed	55				
+释能时间	释能时间	燃烧性能			phase8a_generic_metric_seed	85	time			
+释能功率	释能功率	燃烧性能			phase8a_generic_metric_seed	85	power			
+释放气体量	释放气体量	燃烧性能			phase8a_generic_metric_seed	85	amount			
+释放气体	释放气体量	燃烧性能			phase8a_generic_metric_seed	85	amount			
+爆炸热量	爆炸热量	爆轰/爆炸性能			phase8a_generic_metric_seed	85	energy_per_mass			
+爆炸体积	爆炸体积	爆轰/爆炸性能			phase8a_generic_metric_seed	85	volume			
+质量爆热	质量爆热	爆轰/爆炸性能			phase8a_generic_metric_seed	85	energy_per_mass			
+能量密度	能量密度	燃烧性能			phase8a_generic_metric_seed	85	energy_density			
+晶体密度	晶体密度	物理属性			phase8a_generic_metric_seed	85	density			
+装药密度	装药密度	物理属性			phase8a_generic_metric_seed	85	density			
+装填密度	装填密度	物理属性			phase8a_generic_metric_seed	85	density			
+初始密度	初始密度	物理属性			phase8a_generic_metric_seed	85	density			
+极限起爆药量	极限起爆药量	安全性能			phase8a_generic_metric_seed	85	mass			
+活化能	活化能	热性能			phase8a_generic_metric_seed	85	energy_per_mole			
+半衰期	半衰期	稳定性			phase8a_generic_metric_seed	85	time			
+峰顶温度	峰顶温度	热性能			phase8a_generic_metric_seed	85	temperature			
+峰顶温度差	峰顶温度差	相容性			phase8a_generic_metric_seed	85	temperature			
+热量	热量	热性能			phase8a_generic_metric_seed	85	energy			
+热量差值	热量差值	相容性			phase8a_generic_metric_seed	85	energy			
+放气量	放气量	稳定性			phase8a_generic_metric_seed	85	volume			
+初始爆速	初始爆速	爆轰/爆炸性能			phase8a_generic_metric_seed	85	detonation_velocity			
+殉爆距离	殉爆距离	爆轰/爆炸性能			phase8a_generic_metric_seed	85	length			
+药柱长度	药柱长度	试验条件			phase8a_generic_metric_seed	85	length			
+药柱直径	药柱直径	试验条件			phase8a_generic_metric_seed	85	length			
+圆筒壁膨胀速度	圆筒壁膨胀速度	爆轰/爆炸性能			phase8a_generic_metric_seed	85	velocity			
+初始壁速	初始壁速	爆轰/爆炸性能			phase8a_generic_metric_seed	85	velocity			
+最大壁速	最大壁速	爆轰/爆炸性能			phase8a_generic_metric_seed	85	velocity			
+炸高	炸高	爆轰/爆炸性能			phase8a_generic_metric_seed	85	length			
+破甲深度	破甲深度	爆轰/爆炸性能			phase8a_generic_metric_seed	85	length			
+静电电压	静电电压	安全性能			phase8a_generic_metric_seed	85	voltage			
+铅铸扩张值	铅铸扩张值	爆轰/爆炸性能			phase8a_generic_metric_seed	85	volume			
+TNT当量	TNT当量	爆轰/爆炸性能			phase8a_generic_metric_seed	85	ratio			
+质量燃速	质量燃速	燃烧性能			phase8a_generic_metric_seed	85	mass_rate			
+生成热	生成热	热性能			phase8a_generic_metric_seed	85	energy_per_mole			
+爆发点	爆发点	安全性能			phase8a_generic_metric_seed	85	temperature			
+状态与颜色	状态与颜色	物理属性			phase8a_generic_metric_seed	85				
+纯度	纯度	物理属性			phase8a_generic_metric_seed	85	fraction			
+含水量	含水量	物理属性			phase8a_generic_metric_seed	85	fraction			
+灰分	灰分	物理属性			phase8a_generic_metric_seed	88	fraction			
+水分	水分	物理属性			phase8a_generic_metric_seed	88	fraction			
+加热减量	加热减量	物理属性			phase8a_generic_metric_seed	88	fraction			
+挥发分	挥发分	物理属性			phase8a_generic_metric_seed	88	fraction			
+筛余物	筛余物	物理属性			phase8a_generic_metric_seed	88	fraction			
+甲醇不溶物	甲醇不溶物	物理属性			phase8a_generic_metric_seed	88	fraction			
+不溶物	不溶物	物理属性			phase8a_generic_metric_seed	88	fraction			
+重金属	重金属含量	化学属性			phase8a_generic_metric_seed	88	fraction			
+铁	铁含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+钾	钾含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+镁	镁含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+钠	钠含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+钙	钙含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+铅	铅含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+质量百分比	质量分数	组成/配方			phase8a_generic_metric_seed	88	fraction			
+元素含量	元素含量	组成/配方			phase8a_generic_metric_seed	88	fraction			
+理论量	理论用量	组成/配方			phase8a_generic_metric_seed	88	amount			
+实际量	实际用量	组成/配方			phase8a_generic_metric_seed	88	amount			
+投料量	投料量	组成/配方			phase8a_generic_metric_seed	88	amount			
+得率	得率	试验结果			phase8a_generic_metric_seed	88	fraction			
+产物得率	产物得率	试验结果			phase8a_generic_metric_seed	88	fraction			
+分散度	分散度	结构/形貌			phase8a_generic_metric_seed	88	ratio			
+官能度	官能度	化学属性			phase8a_generic_metric_seed	88	ratio			
+取代度	取代度	化学属性			phase8a_generic_metric_seed	88	ratio			
+Mn	数均分子量	物理属性			phase8a_generic_metric_seed	88	molar_mass			
+Mw	重均分子量	物理属性			phase8a_generic_metric_seed	88	molar_mass			
+实测Mw	实测重均分子量	物理属性			phase8a_generic_metric_seed	88	molar_mass			
+理论Mw	理论重均分子量	物理属性			phase8a_generic_metric_seed	88	molar_mass			
+断裂应变	断裂应变	力学性能			phase8a_generic_metric_seed	88	strain			
+断裂应力	断裂应力	力学性能			phase8a_generic_metric_seed	88	stress			
+断裂模量	断裂模量	力学性能			phase8a_generic_metric_seed	88	modulus			
+初始分解峰	初始分解峰温度	热性能			phase8a_generic_metric_seed	88	temperature			
+最大分解峰	最大分解峰温度	热性能			phase8a_generic_metric_seed	88	temperature			
+叠氮化率	叠氮化率	化学属性			phase8a_generic_metric_seed	88	fraction			
+粘合剂体系	粘合剂体系	组成/配方			phase8a_generic_metric_seed	88				
+黏合剂体系	粘合剂体系	组成/配方			phase8a_generic_metric_seed	88				
+分形维数	分形维数	模型/公式			phase8a_generic_metric_seed	88	ratio			
+相关系数	相关系数	模型/公式			phase8a_generic_metric_seed	88	ratio			
+相对误差	相对误差	试验结果			phase8a_generic_metric_seed	88	fraction			
+相对偏差	相对偏差	试验结果			phase8a_generic_metric_seed	88	fraction			
+偏差	偏差	试验结果			phase8a_generic_metric_seed	88				
+热力学火焰温度	热力学火焰温度	燃烧性能			phase8a_generic_metric_seed	88	temperature			
+火焰温度	火焰温度	燃烧性能			phase8a_generic_metric_seed	88	temperature			
+总焓	总焓	热性能			phase8a_generic_metric_seed	88	energy_per_mass			
+氧系数	氧系数	化学属性			phase8a_generic_metric_seed	88	ratio			
+压强指数	燃速压力指数	燃烧性能			phase8a_generic_metric_seed	88	ratio			
+理论比冲	理论比冲	燃烧性能			phase8a_generic_metric_seed	88	specific_impulse			
+实测黏度	实测黏度	物理属性			phase8a_generic_metric_seed	88	viscosity			
+计算黏度	计算黏度	物理属性			phase8a_generic_metric_seed	88	viscosity			
+固化参数	固化参数	工艺参数			phase8a_generic_metric_seed	88				
+威力指数	威力指数	爆轰/爆炸性能			phase8a_generic_metric_seed	88	ratio			
+真空安定性	真空安定性	稳定性			phase8a_generic_metric_seed	88				
+燃烧主产物	燃烧主产物	化学属性			phase8a_generic_metric_seed	88				
+氧化物熔点	氧化物熔点	物理属性			phase8a_generic_metric_seed	88	temperature			
+氧化物沸点	氧化物沸点	物理属性			phase8a_generic_metric_seed	88	temperature			
+物态	物态	物理属性			phase8a_generic_metric_seed	88				
+蒸气压	蒸气压	物理属性			phase8a_generic_metric_seed	88	pressure			
+气味	气味	物理属性			phase8a_generic_metric_seed	88				
+升华热	升华热	热性能			phase8a_generic_metric_seed	88	energy_per_mole			
+化学发光	化学发光	化学属性			phase8a_generic_metric_seed	88				
+在空气中的稳定性	空气稳定性	稳定性			phase8a_generic_metric_seed	88				
+自然性	自燃性	安全性能			phase8a_generic_metric_seed	88	temperature			
+自燃性	自燃性	安全性能			phase8a_generic_metric_seed	88	temperature			
+与碱的反应性	与碱的反应性	化学属性			phase8a_generic_metric_seed	88				
+反应性	反应性	化学属性			phase8a_generic_metric_seed	88				
+燃烧时间	燃烧时间	燃烧性能			phase8a_generic_metric_seed	88	time			
+黏性	黏性	物理属性			phase8a_generic_metric_seed	88				
+适用性	适用性	应用			phase8a_generic_metric_seed	88				
+组成描述	组成	组成/配方			phase8a_generic_metric_seed	88				
+外观检验	外观检验	测试/检测方法			phase8a_generic_metric_seed	88				
+起爆试验	起爆试验	测试/检测方法			phase8a_generic_metric_seed	88				
+半爆百分率	半爆百分率	试验结果			phase8a_generic_metric_seed	88	fraction			
+极限装药量	极限装药量	安全性能			phase8a_generic_metric_seed	88	mass			
+引燃药成分质量分数	引燃药成分质量分数	组成/配方			phase8a_generic_metric_seed	88	fraction			
+爆燃点	爆发点	安全性能			phase8a_generic_metric_seed	88	temperature			

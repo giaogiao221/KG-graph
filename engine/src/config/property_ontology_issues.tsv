@@ -1,0 +1,8 @@
+﻿issue_type	alias_key	details
+alias_has_multiple_targets	吸湿性	"[[""吸湿性"", ""储存/运输""], [""吸湿性"", ""物理属性""]]"
+alias_has_multiple_targets	毒性	"[[""毒性"", ""安全性能""], [""毒性"", ""毒理/环境""]]"
+alias_has_multiple_targets	比容	"[[""比容"", ""燃烧性能""], [""比容"", ""爆轰/爆炸性能""]]"
+alias_has_multiple_targets	热容量	"[[""热容量"", ""热性能""], [""热容量"", ""物理属性""]]"
+alias_has_multiple_targets	热导率	"[[""热导率"", ""热性能""], [""热导率"", ""物理属性""]]"
+alias_has_multiple_targets	爆发点	"[[""爆发点"", ""安全性能""], [""爆发点"", ""爆轰/爆炸性能""]]"
+alias_has_multiple_targets	爆热	"[[""燃烧热、爆热"", ""爆轰/爆炸性能""], [""爆热"", ""燃烧性能""]]"

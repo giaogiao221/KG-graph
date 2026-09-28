@@ -1,0 +1,49 @@
+﻿condition_types:
+  environment:
+    - temperature
+    - pressure
+    - humidity
+    - atmosphere
+    - vacuum
+    - medium
+  sample_state:
+    - density
+    - particle_size
+    - crystal_form
+    - morphology
+    - water_content
+    - purity
+    - charge_size
+    - loading_mode
+  composition:
+    - component
+    - mass_fraction
+    - molar_ratio
+    - equivalence_ratio
+    - solid_content
+    - binder_fraction
+    - oxidizer_fuel_ratio
+  operation:
+    - heating_rate
+    - loading_rate
+    - frequency
+    - strain_rate
+    - drop_weight
+    - sample_mass
+    - duration
+    - aging_time
+    - cycle_count
+  process:
+    - solvent
+    - concentration
+    - stirring_speed
+    - addition_order
+    - holding_time
+    - drying_temperature
+    - crystallization_method
+    - equipment_type
+  comparison:
+    - control_sample
+    - baseline_formulation
+    - measured_or_predicted
+    - before_or_after

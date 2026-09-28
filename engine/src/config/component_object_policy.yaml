@@ -1,0 +1,5 @@
+version: strict_generic_component_object_policy_v24_5_50
+principles:
+  - 组成/配方事实必须有材料、化学物质、组分角色或明确 component_name。
+  - 评价词、性能表现、效果、方向、空间、参数、曲线不得作为组分进入主图。
+  - 不确定组成事实降级到 candidate_review，不强行归类。

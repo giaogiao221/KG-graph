@@ -1,0 +1,44 @@
+{
+  "profile": "precision",
+  "profiles": {
+    "precision": {
+      "release_threshold": 0.8,
+      "review_threshold": 0.52
+    },
+    "balanced": {
+      "release_threshold": 0.74,
+      "review_threshold": 0.48
+    },
+    "recall": {
+      "release_threshold": 0.68,
+      "review_threshold": 0.42
+    }
+  },
+  "llm_enabled": false,
+  "llm_release_confidence": 0.82,
+  "llm_timeout": 120,
+  "llm_max_retries": 1,
+  "llm_consensus_rounds": 2,
+  "fail_closed": true,
+  "unmapped_property_requires_llm": true,
+  "source_adjustments": {
+    "table_conditional_record": 0.06,
+    "text_labeled_field": 0.08,
+    "text_explicit_numeric_property": 0.05,
+    "text_composition_description": -0.03,
+    "text_narrative_classification": 0.06,
+    "text_narrative_definition": 0.06,
+    "text_narrative_application": 0.06,
+    "text_narrative_function": 0.06,
+    "text_narrative_part_whole": 0.05,
+    "text_narrative_connection": 0.05,
+    "text_narrative_location": 0.05,
+    "text_narrative_method": 0.05,
+    "text_narrative_comparison": 0.05,
+    "text_narrative_effect": 0.05,
+    "text_narrative_causal": 0.04,
+    "text_narrative_experiment_result": 0.05,
+    "text_narrative_safety": 0.06,
+    "text_method_step": 0.07
+  }
+}

@@ -1,0 +1,293 @@
+# Intranet deployment for the extraction review platform (~10 users, 100+
+# document batches). See docs/operations.md for setup, migration, bootstrap,
+# backup/restore, scaling, and key-rotation procedures.
+#
+# Required environment values are read from the shell or an env file:
+#   docker compose --env-file .env -f deploy/docker-compose.yml config
+# See .env.example for the complete list.
+name: extraction-platform
+
+networks:
+  backend:
+  web:
+
+volumes:
+  postgres-data:
+  redis-data:
+  platform-data:
+  minio-data:
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: extraction
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in the environment or .env}
+      POSTGRES_DB: extraction
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U extraction -d extraction"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1G
+    networks:
+      - backend
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 5s
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 256M
+    networks:
+      - backend
+
+  api:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+      args:
+        # Engine artifact produced by tools/build-engine-artifact.sh (git-ignored).
+        # Must exist before compose build; see docs/engine-artifact.md.
+        ENGINE_ARTIFACT_PATH: ${ENGINE_ARTIFACT_PATH:-engine-artifact.tar.gz}
+    restart: unless-stopped
+    environment:
+      EXTRACTION_ENVIRONMENT: production
+      EXTRACTION_DATABASE_URL: postgresql+psycopg://extraction:${POSTGRES_PASSWORD}@postgres:5432/extraction
+      EXTRACTION_JWT_SECRET: ${EXTRACTION_JWT_SECRET:?set EXTRACTION_JWT_SECRET in the environment or .env}
+      EXTRACTION_MODEL_MASTER_KEY: ${EXTRACTION_MODEL_MASTER_KEY:?set EXTRACTION_MODEL_MASTER_KEY in the environment or .env}
+      EXTRACTION_CELERY_BROKER_URL: redis://redis:6379/0
+      EXTRACTION_CELERY_RESULT_BACKEND: redis://redis:6379/1
+      EXTRACTION_STORAGE_ROOT: /data/storage
+      EXTRACTION_WORK_ROOT: /data/work
+      EXTRACTION_CACHE_HMAC_KEY_ENV: EXTRACTION_CACHE_HMAC_KEY
+      EXTRACTION_CACHE_HMAC_KEY: ${EXTRACTION_CACHE_HMAC_KEY:?set EXTRACTION_CACHE_HMAC_KEY in the environment or .env}
+      LEGACY_ENGINE_SOURCE_ROOT: /legacy-engine
+      # Vendored KGchouqu_hzy layout: package at src/book_engine, config at src/config.
+      LEGACY_ENGINE_SUBDIR: "."
+      LEGACY_ENGINE_CONFIG_SUBDIR: "src/config"
+      LEGACY_READONLY_INPUT_ROOTS_JSON: '["/data/storage"]'
+    volumes:
+      - platform-data:/data
+      # Engine ships compiled inside the image at /legacy-engine. No bind mount
+      # here so the distributed image does not expose engine sources. To develop
+      # against a local engine tree, mount it over /legacy-engine in an override.
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 768M
+    networks:
+      - backend
+      - web
+
+  # Rule-queue worker. Also embeds the Celery beat scheduler for the periodic
+  # outbox/lease/cleanup tasks, so keep this service at exactly one replica
+  # (see docs/operations.md#scaling before changing that).
+  worker-rule:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+      args:
+        # Engine artifact produced by tools/build-engine-artifact.sh (git-ignored).
+        # Must exist before compose build; see docs/engine-artifact.md.
+        ENGINE_ARTIFACT_PATH: ${ENGINE_ARTIFACT_PATH:-engine-artifact.tar.gz}
+    restart: unless-stopped
+    command: ["celery", "-A", "app.jobs.celery_app:celery_app", "worker", "--queues=rule", "--concurrency=2", "--beat", "--schedule=/data/work/celerybeat-schedule", "--loglevel=info", "--hostname=rule-worker"]
+    environment:
+      EXTRACTION_ENVIRONMENT: production
+      EXTRACTION_DATABASE_URL: postgresql+psycopg://extraction:${POSTGRES_PASSWORD}@postgres:5432/extraction
+      EXTRACTION_JWT_SECRET: ${EXTRACTION_JWT_SECRET}
+      EXTRACTION_MODEL_MASTER_KEY: ${EXTRACTION_MODEL_MASTER_KEY}
+      EXTRACTION_CELERY_BROKER_URL: redis://redis:6379/0
+      EXTRACTION_CELERY_RESULT_BACKEND: redis://redis:6379/1
+      EXTRACTION_STORAGE_ROOT: /data/storage
+      EXTRACTION_WORK_ROOT: /data/work
+      EXTRACTION_CACHE_HMAC_KEY_ENV: EXTRACTION_CACHE_HMAC_KEY
+      EXTRACTION_CACHE_HMAC_KEY: ${EXTRACTION_CACHE_HMAC_KEY}
+      LEGACY_ENGINE_SOURCE_ROOT: /legacy-engine
+      # Vendored KGchouqu_hzy layout: package at src/book_engine, config at src/config.
+      LEGACY_ENGINE_SUBDIR: "."
+      LEGACY_ENGINE_CONFIG_SUBDIR: "src/config"
+      LEGACY_READONLY_INPUT_ROOTS_JSON: '["/data/storage"]'
+    volumes:
+      - platform-data:/data
+      # Engine ships compiled inside the image at /legacy-engine. No bind mount
+      # here so the distributed image does not expose engine sources. To develop
+      # against a local engine tree, mount it over /legacy-engine in an override.
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "celery -A app.jobs.celery_app:celery_app inspect -d celery@rule-worker ping | grep -q pong"]
+      interval: 30s
+      timeout: 15s
+      retries: 3
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1G
+    networks:
+      - backend
+
+  worker-llm:
+    build:
+      context: ..
+      dockerfile: backend/Dockerfile
+      args:
+        # Engine artifact produced by tools/build-engine-artifact.sh (git-ignored).
+        # Must exist before compose build; see docs/engine-artifact.md.
+        ENGINE_ARTIFACT_PATH: ${ENGINE_ARTIFACT_PATH:-engine-artifact.tar.gz}
+    restart: unless-stopped
+    command: ["celery", "-A", "app.jobs.celery_app:celery_app", "worker", "--queues=llm", "--concurrency=4", "--loglevel=info", "--hostname=llm-worker"]
+    environment:
+      EXTRACTION_ENVIRONMENT: production
+      EXTRACTION_DATABASE_URL: postgresql+psycopg://extraction:${POSTGRES_PASSWORD}@postgres:5432/extraction
+      EXTRACTION_JWT_SECRET: ${EXTRACTION_JWT_SECRET}
+      EXTRACTION_MODEL_MASTER_KEY: ${EXTRACTION_MODEL_MASTER_KEY}
+      EXTRACTION_CELERY_BROKER_URL: redis://redis:6379/0
+      EXTRACTION_CELERY_RESULT_BACKEND: redis://redis:6379/1
+      EXTRACTION_STORAGE_ROOT: /data/storage
+      EXTRACTION_WORK_ROOT: /data/work
+      EXTRACTION_CACHE_HMAC_KEY_ENV: EXTRACTION_CACHE_HMAC_KEY
+      EXTRACTION_CACHE_HMAC_KEY: ${EXTRACTION_CACHE_HMAC_KEY}
+      LEGACY_ENGINE_SOURCE_ROOT: /legacy-engine
+      # Vendored KGchouqu_hzy layout: package at src/book_engine, config at src/config.
+      LEGACY_ENGINE_SUBDIR: "."
+      LEGACY_ENGINE_CONFIG_SUBDIR: "src/config"
+      LEGACY_READONLY_INPUT_ROOTS_JSON: '["/data/storage"]'
+    volumes:
+      - platform-data:/data
+      # Engine ships compiled inside the image at /legacy-engine. No bind mount
+      # here so the distributed image does not expose engine sources. To develop
+      # against a local engine tree, mount it over /legacy-engine in an override.
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "celery -A app.jobs.celery_app:celery_app inspect -d celery@llm-worker ping | grep -q pong"]
+      interval: 30s
+      timeout: 15s
+      retries: 3
+      start_period: 30s
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: 1G
+    networks:
+      - backend
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: frontend/Dockerfile
+    restart: unless-stopped
+    ports:
+      - "${HTTP_PORT:-8080}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1/ || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 128M
+    networks:
+      - web
+
+  # Optional object-storage profile reserved for a future S3-compatible
+  # storage driver. The current release stores objects on the platform-data
+  # volume; start with `--profile minio` only when preparing that migration.
+  minio:
+    image: minio/minio:latest
+    profiles: ["minio"]
+    restart: unless-stopped
+    command: ["server", "/data", "--console-address", ":9001"]
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin-change-me}
+    volumes:
+      - minio-data:/data
+    ports:
+      - "${MINIO_API_PORT:-9000}:9000"
+      - "${MINIO_CONSOLE_PORT:-9001}:9001"
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:9000/minio/health/live || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+    networks:
+      - backend
+
+  # Acceptance-test profile: a deterministic OpenAI-compatible stub used by
+  # frontend/e2e/platform.spec.ts so the end-to-end scenario never calls a
+  # paid external model. Never enable this profile in production.
+  mock-llm:
+    image: python:3.12-slim
+    profiles: ["test"]
+    restart: unless-stopped
+    command: ["python", "/opt/mock-llm/server.py"]
+    volumes:
+      - ../deploy/mock-llm:/opt/mock-llm:ro
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+    deploy:
+      resources:
+        limits:
+          cpus: "0.25"
+          memory: 128M
+    networks:
+      - backend

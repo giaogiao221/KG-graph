@@ -1,0 +1,83 @@
+version: strict_generic_output_slim_policy_v24_5_50
+main_table_max_target_columns: 45
+principles:
+  - graph_import_ready.tsv is a graph fact table, not a debug log.
+  - module decisions, reasons, versions, LLM diagnostics, and repair traces go to audit sidecars.
+  - empty columns are dropped from slim outputs.
+  - full graph table is preserved as graph_import_ready.full.tsv when replacement is enabled.
+core_field_groups:
+  identity_source:
+    - fact_id
+    - graph_fact_key
+    - 文档ID
+    - 书名
+    - 章节路径
+    - 来源定位
+    - 来源类型
+    - 所属表格ID
+    - 所属表格标题
+  schema:
+    - 主体名称
+    - 主体类型
+    - 事实类型
+    - predicate_source_raw
+    - predicate_raw
+    - edge_verb
+    - fact_node_label
+    - graph_object_mode
+    - value_hidden
+    - attribute_category
+    - attribute_category_key
+    - attribute_name
+    - attribute_key
+  value:
+    - 尾实体/取值文本
+    - normalized_value_text
+    - normalized_value_num
+    - normalized_unit
+    - 数值
+    - 范围下限
+    - 范围上限
+    - 单位
+    - 数值类型
+  condition_component:
+    - 条件文本
+    - structured_condition_json
+    - condition_attributes
+    - 方法名称
+    - process_id
+    - process_name
+    - process_type
+    - step_id
+    - step_index
+    - step_label
+    - step_action
+    - step_object
+    - step_condition_text
+    - step_result_text
+    - previous_step_id
+    - next_step_id
+    - component_name
+    - component_role
+    - component_amount_text
+    - component_amount_value
+    - component_amount_unit
+    - component_amount_attribute
+  evidence:
+    - 置信度
+    - 抽取来源
+    - 证据文本
+audit_field_patterns:
+  - '*_version'
+  - '*_reason'
+  - '*_decision'
+  - '*_action'
+  - '*_source'
+  - '*_status'
+  - '*_gate_*'
+  - '*_guard_*'
+  - '*_filter_*'
+  - '*_candidate_*'
+  - '*_recover_*'
+  - '*_repair*'
+  - 'LLM*'

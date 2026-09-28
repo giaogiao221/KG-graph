@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+config.env
+*.py[cod]
+runs/
+llm_cache*/
+*.log
+v106_english_compat_validation_report.json
+books/*
+!books/demo_energetic.md

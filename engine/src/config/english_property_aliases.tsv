@@ -1,0 +1,66 @@
+alias	canonical_name
+absolute density	密度
+apparent density	密度
+bulk density	密度
+crystal density	晶体密度
+density	密度
+loading density	装填密度
+pressed density	装药密度
+theoretical density	密度
+average particle diameter	粒径
+average particle size	粒径
+grain size	粒度
+mean particle diameter	粒径
+mean particle size	粒径
+particle diameter	粒径
+particle size	粒径
+particle size distribution	粒径分布
+boiling point	沸点
+decomposition temperature	分解温度
+dsc decomposition temperature	DSC分解温度Td
+glass transition temperature	温度
+melting point	熔点
+thermal decomposition temperature	热分解温度
+burn rate	燃速
+burning rate	燃速
+burning rate pressure exponent	燃速压力指数
+burning rate temperature coefficient	燃速温度系数
+low pressure burning rate	低压燃速
+mass burning rate	质量燃速
+pressure exponent	燃速压力指数
+detonation velocity	爆速
+initial detonation velocity	初始爆速
+specific impulse	比冲
+theoretical specific impulse	理论比冲
+heat of explosion	爆热
+mass heat of explosion	质量爆热
+impact sensitivity	撞击感度
+friction sensitivity	摩擦感度
+sensitivity	感度
+tensile strength	拉伸强度
+elongation at break	断裂伸长率
+thermal conductivity	热导率
+thermal stability	热稳定性
+oxygen balance	氧平衡
+combustion temperature	燃烧温度
+explosion limit	爆炸极限
+flash point	闪点
+viscosity	粘度
+crystal form	晶型
+crystal phase	晶型
+purity	纯度
+moisture content	水分
+water content	水含量
+content	含量
+mass fraction	质量分数
+weight fraction	质量分数
+wt percent	质量分数
+wt pct	质量分数
+molecular weight	分子量
+molar mass	分子量
+chemical formula	化学式
+english name	英文名称
+alias	别名
+synonym	别名
+process step	操作步骤
+operation step	操作步骤

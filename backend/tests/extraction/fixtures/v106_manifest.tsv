@@ -1,0 +1,2 @@
+book_title	status	final_rows	llm_error_jobs
+fixture book	complete_with_retryable_errors	8	1

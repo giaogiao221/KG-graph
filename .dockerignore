@@ -1,0 +1,26 @@
+# Docker build context hygiene: keep secrets, caches, and local state out of images.
+.git
+.worktrees
+.superpowers
+.uv-cache
+.tools
+docs
+storage
+*.log
+.env
+.env.*
+!.env.example
+**/node_modules
+**/dist
+!frontend/dist
+**/__pycache__
+**/.pytest_cache
+**/.venv
+**/e2e
+**/playwright-report
+**/test-results
+# Never ship engine runtime artifacts or operator LLM keys into a build context.
+engine/config.env
+engine/runs/
+engine/llm_cache*/
+engine/books/

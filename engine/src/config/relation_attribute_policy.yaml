@@ -1,0 +1,28 @@
+version: v24.5.49
+name: strict_generic_relation_attribute_clarifier_policy
+principles:
+  - 原始谓词只作证据，不直接等于边或属性节点。
+  - edge_verb 只保留稳定动作词，如 具有、包含、应用于、定义为、提高、降低、通过、受影响于。
+  - attribute_name 必须是名词性属性项、指标项、方法项、场景项或组分项。
+  - 明确指标词不得被泛化为“物理属性项/工艺参数项/性能指标”。
+  - 关系与客体类型不一致时，优先降级复核，不强行入主图。
+  - 不确定修复不得发明新主体、新客体或新证据。
+repair_targets:
+  explicit_metric_preservation:
+    examples:
+      密度: [物理属性, 密度]
+      压力: [工艺参数, 压力]
+      初速: [内弹道性能, 初速]
+      膛压差: [内弹道性能, 膛压差]
+  long_predicate_split:
+    pattern: 条件后 + 提高/降低 + 指标
+    output: condition_text + edge_verb + attribute_name
+  relation_object_consistency:
+    application_object_component_list: demote
+    composition_object_qualitative_adjective: demote
+    definition_object_explanatory_description: demote
+    metric_value_unit_mismatch: demote
+outputs:
+  repaired_tsv: facts_release_ready.relation_attribute_repaired.tsv
+  demoted_tsv: facts_release_ready.relation_attribute_demoted.tsv
+  report_json: facts_release_ready.relation_attribute_clarifier_report.json

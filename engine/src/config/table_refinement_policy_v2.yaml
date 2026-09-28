@@ -1,0 +1,30 @@
+version: 2
+stage: table_record_refinement_phase5
+
+property_unit:
+  separate_unit_from_attribute: true
+  collapse_duplicate_header_path: true
+  remove_generic_parent_header: true
+
+axis_inversion:
+  enabled: true
+  policy: conservative
+  requirements:
+    - subject_is_exact_property_label
+    - property_is_material_like
+    - value_is_numeric_or_range
+
+multi_subject:
+  enabled: true
+  split_delimiters: ["、", "，", ",", "；", ";", "newline"]
+  preserve_slash_formulation: true
+  minimum_parts: 2
+  maximum_parts: 6
+  require_all_parts_material_like: true
+
+numeric_series:
+  auto_split_concatenated_decimals: false
+  unresolved_reason: suspected_concatenated_numeric_series
+
+composition:
+  populate_schema59_component_fields: true

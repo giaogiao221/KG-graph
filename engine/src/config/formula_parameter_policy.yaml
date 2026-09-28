@@ -1,0 +1,5 @@
+version: strict_generic_formula_parameter_policy_v24_5_50
+principles:
+  - 公式、变量、参数符号、算法方程进入 formula_parameter_layer。
+  - 参数符号不得作为普通主体或二级属性进入主图。
+  - 控制/轨迹/公式密集文献必须先经过该层再进入 graph_guard。

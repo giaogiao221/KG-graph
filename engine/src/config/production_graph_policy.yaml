@@ -1,0 +1,40 @@
+# KGchouqu production graph policy v24.5.37
+# 目标：几百万级图谱生产时“少而准”，高召回只保留候选，不默认入主图。
+version: v24.5.37
+text:
+  high_recall_target: candidate_only
+  default_high_recall_mode_when_auto: off
+  precision_gate_default: force
+  candidate_promote_default: false
+  reject_abstract_subject: true
+  reject_narrative_relation: true
+  unknown_predicate_target: candidate_review
+  numeric_predicate_requires_numeric_value: true
+  max_subject_len: 42
+  max_plain_object_len: 260
+  core_quality_levels:
+    - P0_core_graph
+  candidate_quality_levels:
+    - P1_graph_candidate
+    - P2_review
+release:
+  rebuild_after_text_production_filter: true
+  replace_old_text_rows_with_filtered_text: true
+  append_production_candidates_to_release_candidate: true
+  preserve_non_text_release_rows: true
+graph:
+  min_confidence_graph: 0.88
+  only_graph_import_ready_for_main_graph: true
+  hide_value_nodes: true
+  edge_should_be_verb: true
+  attribute_should_be_node: true
+  require_predicate_normalization: true
+  candidate_promote_default: false
+  fallback_other_target: manual_review
+  route_other_attribute_to_manual_review: true
+outputs:
+  core_graph: step_graph_guard/graph_import_ready.tsv
+  candidate_review: step_release/facts_candidate_review.tsv
+  text_production_candidate: step_text_mainline/08_production_text_candidate_review.tsv
+  text_production_rejected: step_text_mainline/08_production_text_rejected.tsv
+  release_rebuilder_report: step_release/release_rebuilder_report.json

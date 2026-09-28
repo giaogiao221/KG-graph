@@ -1,0 +1,20 @@
+﻿version: 1
+engine: book_engine
+mode: production
+
+stages:
+  - document_normalization
+  - block_role_classification
+  - subject_registry
+  - text_fact_extraction
+  - table_grid_rebuild
+  - table_semantic_planning
+  - conditional_fact_compilation
+  - normalization
+  - material_fact_gate
+  - schema59_export
+  - quality_assurance
+
+legacy:
+  enabled: false
+  root: model/legacy_v245

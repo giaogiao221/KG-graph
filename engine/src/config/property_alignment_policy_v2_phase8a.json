@@ -1,0 +1,19 @@
+{
+  "version": "phase8a",
+  "exact_threshold": 0.9,
+  "context_threshold": 0.78,
+  "ambiguity_margin": 0.07,
+  "max_candidates": 8,
+  "ambiguous_policy": "exclude",
+  "unmapped_policy": "preserve_other",
+  "llm_enabled": false,
+  "llm_min_confidence": 0.72,
+  "llm_timeout": 120,
+  "llm_max_retries": 2,
+  "llm_fail_policy": "closed",
+  "notes": [
+    "The LLM may only select a supplied property_id or unresolved.",
+    "Subject, value, unit, conditions and evidence are immutable during property alignment.",
+    "Final graph output remains exactly the captured legacy 59-column schema."
+  ]
+}

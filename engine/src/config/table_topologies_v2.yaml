@@ -1,0 +1,12 @@
+﻿topologies:
+  - entity_by_property
+  - entity_by_condition
+  - condition_by_property
+  - formulation_matrix
+  - experiment_result
+  - process_parameter_result
+  - method_comparison
+  - pairwise_compatibility
+  - qualitative_taxonomy
+  - model_validation
+  - composition_and_performance

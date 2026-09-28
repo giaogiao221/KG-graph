@@ -1,0 +1,10 @@
+﻿value_roles:
+  - measured_result
+  - calculated_result
+  - theoretical_value
+  - condition_value
+  - sample_state
+  - formulation_component
+  - comparison_baseline
+  - identifier
+  - qualitative_description

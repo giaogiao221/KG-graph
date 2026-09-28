@@ -1,0 +1,40 @@
+[project]
+name = "extraction-review-platform"
+version = "0.1.0"
+description = "Backend service for the extraction review platform"
+requires-python = ">=3.11"
+dependencies = [
+    "alembic",
+    "celery",
+    "cryptography",
+    "fastapi",
+    "psycopg[binary]",
+    "pwdlib[argon2]",
+    "pydantic-settings",
+    "pyjwt",
+    "python-multipart",
+    "redis",
+    "sqlalchemy",
+    "uvicorn",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx",
+    "pytest",
+    "pytest-asyncio",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["app*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+filterwarnings = [
+    'ignore:Using .*httpx.*starlette\.testclient.*deprecated:starlette.exceptions.StarletteDeprecationWarning',
+]

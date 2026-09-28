@@ -1,0 +1,5 @@
+version: strict_generic_process_flow_policy_v24_5_50
+principles:
+  - 步骤1、步骤2、第一步、(1)、① 等标记解析为 step_index 和 step_label。
+  - 工艺流程应表达为 ProcessFlow + ProcessStep + 下一步关系。
+  - 步骤动作、对象、条件、结果保留来源证据，不编造操作细节。

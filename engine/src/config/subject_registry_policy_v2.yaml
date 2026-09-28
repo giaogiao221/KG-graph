@@ -1,0 +1,21 @@
+version: 1
+stage: subject_registry_schema59_phase4
+
+thresholds:
+  confirmed: 0.70
+  candidate: 0.42
+  record_confidence: 0.50
+  table_plan_confidence: 0.48
+
+hard_reject:
+  - empty_subject
+  - property_or_unit_like_subject
+  - concatenated_or_oversized_subject
+  - suspected_subject_property_axis_inversion
+
+export:
+  scope: table_records_only
+  schema_columns: 59
+  candidate_records: hold
+  unresolved_records: hold
+  numeric_visibility: numeric_only

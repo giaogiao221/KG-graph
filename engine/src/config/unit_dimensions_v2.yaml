@@ -1,0 +1,33 @@
+﻿dimensions:
+  temperature:
+    - degC
+    - K
+  pressure:
+    - Pa
+    - kPa
+    - MPa
+    - GPa
+  density:
+    - g/cm3
+    - kg/m3
+  length:
+    - nm
+    - um
+    - mm
+  time:
+    - ns
+    - us
+    - ms
+    - s
+    - min
+    - h
+    - d
+  heating_rate:
+    - K/min
+    - degC/min
+  burning_rate:
+    - mm/s
+    - cm/s
+  detonation_velocity:
+    - m/s
+    - km/s

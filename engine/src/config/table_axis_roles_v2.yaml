@@ -1,0 +1,12 @@
+﻿axis_roles:
+  - entity
+  - property
+  - condition
+  - value
+  - unit
+  - method
+  - instrument
+  - sample
+  - group
+  - comparison
+  - note

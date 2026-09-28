@@ -1,0 +1,7 @@
+{
+  "ok": true,
+  "status": "generalized_high_recall_phase105_complete",
+  "pipeline_revision": "phase105_generalized_high_recall_dual_release",
+  "schema59_merged_export": {"ok": true, "rows": 12},
+  "coverage": {"ok": true, "accepted_rows": 12}
+}

@@ -1,0 +1,18 @@
+{
+  "version": "2_phase8b",
+  "sample_size": 300,
+  "seed": 20260710,
+  "include_all_high_risk": true,
+  "required_annotation_status": "completed",
+  "thresholds": {
+    "category_accuracy": 0.95,
+    "name_accuracy": 0.90,
+    "full_property_accuracy": 0.88,
+    "accept_accuracy": 0.95
+  },
+  "notes": [
+    "Thresholds are release targets, not claims about current performance.",
+    "The gold template and evaluation outputs are sidecar files only.",
+    "The final graph_import_ready.tsv remains governed by the exact legacy 59-column contract."
+  ]
+}

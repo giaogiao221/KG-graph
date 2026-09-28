@@ -1,0 +1,8 @@
+{
+  "ok": false,
+  "status": "complete_with_retryable_errors",
+  "final_rows": 8,
+  "manual_review_rows": 2,
+  "llm_error_jobs": 1,
+  "outputs": {"final": "step_graph_guard/graph_import_ready.tsv"}
+}

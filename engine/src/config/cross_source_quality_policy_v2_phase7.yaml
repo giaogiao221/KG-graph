@@ -1,0 +1,35 @@
+version: 2
+phase: 7
+schema_contract:
+  column_count: 59
+  exact_legacy_header: true
+  allow_new_columns: false
+cross_source_priority:
+  - table_conditional_record
+  - text_labeled_field
+  - text_explicit_numeric_property
+  - text_section_narrative
+  - text_composition_description
+dedup_key:
+  - canonical_subject
+  - canonical_attribute
+  - normalized_value
+  - normalized_unit
+  - normalized_conditions
+conflict_policy:
+  remove_exact_duplicates: true
+  preserve_different_conditions: true
+  preserve_conflicting_values_for_audit: true
+subject_type_policy:
+  prefer_more_specific_type: true
+  canonical_types:
+    - 火工品器件
+    - 配方/材料体系
+    - 高聚物
+    - 材料类别
+    - 样品
+    - 材料
+text_condition_policy:
+  same_sentence_only: true
+  explicit_condition_name_required: true
+  unit_driven_pressure_inference: restricted

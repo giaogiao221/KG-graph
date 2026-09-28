@@ -1,0 +1,71 @@
+{
+  "revision": "v106_english_compat",
+  "provider": "Alibaba Cloud Model Studio OpenAI-compatible Chat Completions",
+  "model": "qwen3-max",
+  "thinking": false,
+  "structured_output": true,
+  "final_confidence_threshold": 0.68,
+  "candidate_batch_size": 12,
+  "max_window_chars": 6500,
+  "max_table_chars": 30000,
+  "direct_max_facts_text": 24,
+  "direct_max_facts_table": 80,
+  "preserve_strict_table_baseline": true,
+  "review_all_text_candidates": true,
+  "direct_scan_all_text_windows": true,
+  "direct_scan_all_tables": true,
+  "excluded_titles": [
+    "含能材料及相关物手册"
+  ],
+  "output_contract": {
+    "final": "graph_import_ready.tsv",
+    "high_precision_table_baseline": "graph_import_ready_high_precision.tsv",
+    "raw_v105_generalized": "graph_generalized_raw_candidates.tsv",
+    "manual_review": "graph_candidate_review_59.tsv",
+    "rejected": "graph_rejected_59.tsv",
+    "columns": 59
+  },
+  "process_flow_specialization": {
+    "enabled": true,
+    "complete_span_extraction": true,
+    "generic_step_release_disabled": true,
+    "max_span_chars": 12000,
+    "confidence_threshold": 0.72,
+    "max_steps": 40,
+    "max_processes_per_span": 3,
+    "single_repair_attempt_for_incomplete_sequence": true,
+    "minimum_steps": 2,
+    "require_contiguous_step_indices": true,
+    "require_bidirectional_previous_next_links": true,
+    "reject_document_outline_history_and_mechanism_only_sequences": true,
+    "outputs": {
+      "step_rows": "graph_process_flow_ready.tsv",
+      "graphs": "step_llm_v106/process_flow_graphs.jsonl",
+      "review": "step_llm_v106/process_flow_review.jsonl",
+      "validation": "process_graph_validation_report.json"
+    }
+  },
+  "english_compatibility": {
+    "enabled": true,
+    "language_detection_scope": "per_unit",
+    "supported_languages": [
+      "zh",
+      "en",
+      "mixed"
+    ],
+    "preserve_source_language_fields": true,
+    "ontology_label_language": "zh-CN",
+    "explicit_abbreviation_binding": true,
+    "translate_english_subjects": false,
+    "english_property_alias_file": "english_property_aliases.tsv",
+    "english_relation_alias_file": "english_relation_aliases.tsv",
+    "unmapped_property_policy": "manual_review",
+    "english_process_flow_detection": true,
+    "chinese_regression_policy": "unchanged",
+    "runtime_environment_variables": [
+      "OPENAI_BASE_URL",
+      "OPENAI_API_KEY",
+      "OPENAI_MODEL"
+    ]
+  }
+}
